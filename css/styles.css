@@ -42,3 +42,45 @@ footer
 {
     color: black;
 }
+.footer
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color:midnightblue;
+    color: white;
+}
+.f-logo
+{
+    padding-left: 50px;
+    padding-top: 50px;
+    float: left;
+}
+.f-description
+{
+    float: left;
+    padding-left: 50px;
+}
+.f-contact
+{
+    float: left;
+    padding-left: 50px;
+}
+.f-contact a:link
+{
+    color:gold;
+    text-decoration: none;
+}
+.f-contact a:visited
+{
+    color:gold;
+}
+.f-contact a
+{
+    padding-left: 10px;
+}
+.b-h1
+{
+    text-align: center;
+    color: darkblue;
+}
