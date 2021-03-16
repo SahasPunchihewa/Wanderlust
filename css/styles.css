@@ -1,3 +1,8 @@
+html,body
+{
+    margin: 0%;
+    padding: 0%;
+}
 span
 {
     color: yellow;
@@ -7,4 +12,13 @@ span
 footer
 {
     position: fixed;
+}
+.header
+{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 2%;
+    background-color: cornflowerblue;
+    text-align: center;
+    font-size: 30px;
 }
