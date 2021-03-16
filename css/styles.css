@@ -44,11 +44,18 @@ footer
 }
 .footer
 {
-    position: fixed;
+    padding: 0%;
+    position: sticky;
     bottom: 0;
     width: 100%;
-    background-color:midnightblue;
     color: white;
+}
+.f-container
+{
+    padding: 0%;
+    position: absolute;
+    width: 100%;
+    background-color:#313131;
 }
 .f-logo
 {
@@ -83,4 +90,8 @@ footer
 {
     text-align: center;
     color: darkblue;
+}
+.main-img
+{
+    width: 100%;
 }
