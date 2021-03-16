@@ -2,12 +2,7 @@ html,body
 {
     margin: 0%;
     padding: 0%;
-}
-span
-{
-    color: yellow;
-    font-size: large;
-    padding-right: 20px;
+    font-family:"Montserrat";
 }
 footer
 {
@@ -17,8 +12,33 @@ footer
 {
     margin-left: 0px;
     margin-right: 0px;
-    padding: 2%;
-    background-color: cornflowerblue;
-    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    background-color:antiquewhite;
+    text-align: right;
     font-size: 30px;
+}
+.logo
+{
+    float: left;
+}
+.title
+{
+    padding-left: 20px;
+    float: left;
+}
+.nav
+{
+    padding-top: 35px;
+}
+.nav a:link
+{
+    color: black;
+    text-decoration: none;
+    font-size:large;
+    font-weight: bold;
+}
+.nav a:visited
+{
+    color: black;
 }
