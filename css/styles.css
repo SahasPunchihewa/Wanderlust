@@ -4,43 +4,54 @@ html,body
     padding: 0%;
     font-family:"Montserrat";
 }
-footer
-{
-    position: fixed;
-}
 .header
+{
+    width: 100%;
+    position:absolute;
+    color: white;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align:right;
+    font-size: 30px;
+}
+/*.header
 {
     margin-left: 0px;
     margin-right: 0px;
     padding-top: 10px;
     padding-bottom: 40px;
-    background-color:antiquewhite;
     text-align: right;
     font-size: 30px;
-}
+}*/
 .logo
 {
     float: left;
 }
 .title
 {
+    float:left;
+    padding-top: 15px;
+    font-size: larger;
+    font-weight: bold;
     padding-left: 20px;
-    float: left;
+    
 }
 .nav
 {
-    padding-top: 35px;
+    padding-top: 15px;
 }
 .nav a:link
 {
-    color: black;
+    color:white;
     text-decoration: none;
     font-size:large;
     font-weight: bold;
 }
 .nav a:visited
 {
-    color: black;
+    color:white;
 }
 .footer
 {
@@ -86,10 +97,31 @@ footer
 {
     padding-left: 10px;
 }
+
+.b-img-container
+{
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+.img-details
+{
+    width: 100%;
+    text-align: center;
+    position:absolute;
+    top: 40%;
+    bottom:50%;
+    color: white;
+}
 .b-h1
 {
+    font-size: 120px;
+    font-weight:bold;
     text-align: center;
-    color: darkblue;
+}
+.b-description
+{
+    font-size: larger;
 }
 .main-img
 {
