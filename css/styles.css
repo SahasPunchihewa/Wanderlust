@@ -53,6 +53,10 @@ html,body
 {
     color:white;
 }
+.nav a:hover
+{
+    color: deepskyblue;
+}
 .footer
 {
     padding: 0%;
