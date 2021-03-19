@@ -114,6 +114,53 @@ section.sec1
     background-image: url("../img/main-background.png");
     background-size: cover;
 }
+.main-description
+{
+    padding-top: 43vh;
+    padding-left: 23vw;
+    padding-right: 100px;
+    color: white;
+    transition: 1s;
+}
+.main-sticky
+{
+    padding-top: 50vh;
+    padding-left: 25vw;
+    padding-right: 100px;
+    color: white;
+    transition: 1s;
+}
+.m-title
+{
+    font-size: 80px;
+    font-weight:500;
+    text-transform: uppercase;
+}
+.s-title
+{
+    font-size: 20px;
+}
+.m-buttons
+{
+    font-size: 15px;
+    padding-top: 20px;
+}
+.m-buttons a
+{
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid white;
+    transition: 1s;
+}
+.m-buttons a:hover
+{
+    color: deepskyblue;
+    border: 2px solid deepskyblue;
+}
+
 .sec2
 {
     padding: 50px;
