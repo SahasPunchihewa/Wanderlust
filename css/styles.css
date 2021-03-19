@@ -1,133 +1,192 @@
-html,body
+body
 {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     font-family:"Montserrat";
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-.header
+
+/*Nav*/
+
+.nav-header
 {
+    position: fixed;
+    top:0;
+    left:0;
     width: 100%;
-    position:absolute;
-    color: white;
-    margin-left: 0px;
-    margin-right: 0px;
+    height: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    /*padding: 10px 50px;*/
+    box-sizing: border-box;
+    transition: 1s;
+}
+.sticky
+{
+    background-color: white;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 120px;
+    padding-left: 60px;
+    padding-right: 60px;
     padding-top: 10px;
     padding-bottom: 10px;
-    text-align:right;
-    font-size: 30px;
+    box-sizing: border-box;
+    transition: 1s;
 }
-/*.header
-{
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-top: 10px;
-    padding-bottom: 40px;
-    text-align: right;
-    font-size: 30px;
-}*/
-.logo
+nav .h-logo
 {
     float: left;
 }
-.title
+nav .h-logo img
 {
-    float:left;
-    padding-top: 15px;
-    font-size: larger;
-    font-weight: bold;
+    transition: 1s;
+}
+nav .h-title
+{
     padding-left: 20px;
-    
+    padding-top: 20px;
+    font-weight: bold;
+    float: left;
+    color: white;
+    font-size: 50px;
+    transition: 1s;
 }
-.nav
+nav .st-title
+{
+    padding-left: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+    float: left;
+    color:black;
+    font-size: 50px;
+    transition: 1s;
+}
+nav ul
+{
+    float: right;
+    margin: 0;
+    padding: 0;
+    display:flex;
+}
+nav ul li
 {
     padding-top: 15px;
+    list-style: none;
 }
-.nav a:link
+.h-ul a
 {
     color:white;
+}
+.st-anc a
+{
+    color:black;
+}
+nav ul li a
+{
+    line-height: 80px;
+    font-size: 23px;
+    font-weight:300;
+    padding: 5px 20px;
     text-decoration: none;
-    font-size:large;
-    font-weight: bold;
+    transition: 1s;
 }
-.nav a:visited
+nav ul li a.active
 {
-    color:white;
+    color:dodgerblue;
+    font-weight: 500;
 }
-.nav a:hover
+nav ul li a:hover
 {
     color: deepskyblue;
 }
+
+/*Section 1*/
+
+section.sec1
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/main-background.png");
+    background-size: cover;
+}
+.sec2
+{
+    padding: 50px;
+}
+.sec3
+{
+    padding: 50px;
+}
+.sec4
+{
+    padding: 50px;
+}
+
+/*Footer*/
+
 .footer
 {
-    padding: 0%;
     position: sticky;
-    bottom: 0;
+    top:100%;
     width: 100%;
+    background-color:#111219;
     color: white;
+    /*flex-direction: column;*/
 }
 .f-container
 {
-    padding: 0%;
-    position: absolute;
-    width: 100%;
-    background-color:#313131;
-}
-.f-logo
-{
-    padding-left: 50px;
-    padding-top: 50px;
-    float: left;
+    display: flex;
 }
 .f-description
 {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
     float: left;
-    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.f-logo
+{
+    float: left;
 }
 .f-contact
 {
-    float: left;
-    padding-left: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
 }
-.f-contact a:link
+.c-details
 {
-    color:gold;
+    display: flex;
+}
+.c-names
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    float: left;
+}
+.c-links
+{
+    padding: 20px;
+}
+.c-links p a
+{
+    color:lightskyblue;
     text-decoration: none;
 }
-.f-contact a:visited
+.c-links p a:hover
 {
-    color:gold;
+    color:darkblue;
+    transition: 1s;
 }
-.f-contact a
+.f-coppy
 {
-    padding-left: 10px;
-}
-
-.b-img-container
-{
-    width: 100%;
+    padding-top: 20px;
     text-align: center;
-    position: relative;
-}
-.img-details
-{
-    width: 100%;
-    text-align: center;
-    position:absolute;
-    top: 40%;
-    bottom:50%;
-    color: white;
-}
-.b-h1
-{
-    font-size: 120px;
-    font-weight:bold;
-    text-align: center;
-}
-.b-description
-{
-    font-size: larger;
-}
-.main-img
-{
-    width: 100%;
 }
