@@ -4,38 +4,24 @@
     <head>
         <title>Travel</title>
         <link rel="stylesheet" type="text/css" href="css/styles2.css">
-        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-        <script type="text/javascript">
-            $(window).on('scroll',function()
-            {
-                if($(window).scrollTop())
-                {
-                    $('nav').addClass('white');
-                }
-                else
-                {
-                    $('nav').removeClass('white');
-                }
-            })
-        </script>
     </head>
 
     <body>
-        <nav>
+        <nav class="nav-header" id="header">
             <div class="h-logo">
                 <img src="img/logo.png">
             </div>
-            <div class="h-title">
+            <div class="h-title" id="nav-title">
                 Travel
             </div>
-            <ul>
+            <ul class="h-ul" id="nav-anc">
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#">Page 1</a></li>
                 <li><a href="#">Page 2</a></li>
                 <li><a href="#">Page 3</a></li>
                 <li><a href="#">Page 4</a></li>
             </ul>
-        </nav>
+        </nav><!--
         <section class="sec1"></section>
         <section class="sec2">
             <h1>Our Services</h1>
@@ -80,6 +66,11 @@ Dolor purus non enim praesent elementum facilisis leo. Amet consectetur adipisci
             </p>
         </section>
         <section class="sec5"></section>
-    </body>
+    -->
+        <div class="footer">
+            This Is Footer
+        </div>
 
+        <script src="js/script.js"></script>
+    </body>
 </html>
