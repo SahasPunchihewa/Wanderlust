@@ -3,6 +3,9 @@ body
     margin: 0;
     padding: 0;
     font-family:"Montserrat";
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /*Nav*/
@@ -94,7 +97,7 @@ nav ul li a.active
 }
 nav ul li a:hover
 {
-    color:deepskyblue;
+    color: deepskyblue;
 }
 
 /*Section 1*/
@@ -106,13 +109,79 @@ section.sec1
     background-image: url("../img/main-background.png");
     background-size: cover;
 }
+.sec2
+{
+    padding: 50px;
+}
+.sec3
+{
+    padding: 50px;
+}
+.sec4
+{
+    padding: 50px;
+}
 
 /*Footer*/
 
 .footer
 {
-    background-color: black;
+    position: sticky;
+    top:100%;
+    width: 100%;
+    background-color:#111219;
     color: white;
-    height: 200px;
-    bottom: 0%;
+    /*flex-direction: column;*/
+}
+.f-container
+{
+    display: flex;
+}
+.f-description
+{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+.f-logo
+{
+    float: left;
+}
+.f-contact
+{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+}
+.c-details
+{
+    display: flex;
+}
+.c-names
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    float: left;
+}
+.c-links
+{
+    padding: 20px;
+}
+.c-links p a
+{
+    color:lightskyblue;
+    text-decoration: none;
+}
+.c-links p a:hover
+{
+    color:darkblue;
+    transition: 1s;
+}
+.f-coppy
+{
+    padding-top: 50px;
+    text-align: center;
 }
