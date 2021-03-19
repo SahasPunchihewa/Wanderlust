@@ -163,15 +163,24 @@ section.sec1
 
 .sec2
 {
-    padding: 50px;
+    padding: 100px;
 }
+.s2-description
+{
+    float: left;
+}
+.s2-img
+{
+    padding-left: 50px;
+}
+
 .sec3
 {
-    padding: 50px;
+    padding: 100px;
 }
 .sec4
 {
-    padding: 50px;
+    padding: 100px;
 }
 
 /*Footer*/
