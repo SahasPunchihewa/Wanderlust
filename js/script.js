@@ -6,6 +6,11 @@ var anchor=document.getElementById("nav-anc");
 var mainTitle=document.getElementById("main-title");
 var headicon=document.getElementById("h-icon");
 
+var uName=document.qform.uname.value;
+var eMail=document.qform.email.value;
+var Subject=document.qform.subject.value;
+var Detail=document.qform.query.value;
+
 var sticky=header.offsetTop;
 
 function myFunction()
