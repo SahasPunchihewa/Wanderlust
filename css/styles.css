@@ -213,8 +213,13 @@ section.sec1
 {
     padding-top: 20px;
     display: flex;
+    padding-bottom: 20px;
 }
 .s3-img-container h3
+{
+    text-align: center;
+}
+.s3-img-container p
 {
     text-align: center;
 }
@@ -262,6 +267,10 @@ section.sec1
 }
 
 .sec4
+{
+    padding: 100px;
+}
+.empty
 {
     padding: 100px;
 }
