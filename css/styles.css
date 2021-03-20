@@ -66,6 +66,10 @@ nav .st-title
     font-size: 50px;
     transition: 1s;
 }
+#h-icon
+{
+    transition: 1s;
+}
 nav ul
 {
     float: right;
@@ -117,7 +121,7 @@ section.sec1
 .main-description
 {
     padding-top: 43vh;
-    padding-left: 23vw;
+    padding-left: 20vw;
     padding-right: 100px;
     color: white;
     transition: 1s;
@@ -285,6 +289,10 @@ section.sec1
     float: left;
     display: flex;
     flex-direction: column;
+}
+.f-desc-p
+{
+    font-weight:100;
 }
 .f-logo
 {
