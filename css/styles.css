@@ -66,6 +66,10 @@ nav .st-title
     font-size: 50px;
     transition: 1s;
 }
+#h-icon
+{
+    transition: 1s;
+}
 nav ul
 {
     float: right;
@@ -117,7 +121,7 @@ section.sec1
 .main-description
 {
     padding-top: 43vh;
-    padding-left: 23vw;
+    padding-left: 20vw;
     padding-right: 100px;
     color: white;
     transition: 1s;
@@ -204,13 +208,37 @@ section.sec1
     width: 600px;
 }
 
+.s-q-container
+{
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+}
+.name
+{
+    padding: 10px;
+}
+.email
+{
+    padding: 10px;
+}
+.subjects
+{
+    padding: 10px;
+}
+
 /*Section 3*/
 .s3-img-container
 {
     padding-top: 20px;
     display: flex;
+    padding-bottom: 20px;
 }
 .s3-img-container h3
+{
+    text-align: center;
+}
+.s3-img-container p
 {
     text-align: center;
 }
@@ -223,32 +251,45 @@ section.sec1
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 10px;
-
     float: left;
+    transition: 1s;
 }
 .s3-img1 img
 {
-    border-radius: 5px 5px 0 0;
+    transition: 1s;
+    width: 360px;
+    border-radius: 10px;
+}
+.s3-img1 img:hover
+{
+    transition: 1s;
+    width: 360px;
+    object-fit: none;
 }
 .s3-img1:hover
 {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transition: 1s;
 }
 .s3-card-title
 {
     padding: 2px 16px;
+    transition: 1s;
 }
 .s3-img2
 {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
+    transition: 0.5s;
     width: 40%;
     border-radius: 5px;
-
     float: left;
 }
 
 .sec4
+{
+    padding: 100px;
+}
+.empty
 {
     padding: 100px;
 }
@@ -276,6 +317,10 @@ section.sec1
     float: left;
     display: flex;
     flex-direction: column;
+}
+.f-desc-p
+{
+    font-weight:100;
 }
 .f-logo
 {
