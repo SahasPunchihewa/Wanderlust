@@ -163,7 +163,9 @@ section.sec1
 
 .sec2
 {
-    padding: 100px;
+    padding-top: 10%;;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 .s2-description
 {
@@ -211,6 +213,23 @@ section.sec1
 {
     float: left;
 }
+.f-nav
+{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+}
+.f-nav a
+{
+    text-decoration: none;
+    transition: 1s;
+    color:lightskyblue;
+}
+.f-nav a:hover
+{
+    color:darkblue;
+}
+
 .f-contact
 {
     padding-left: 100px;
