@@ -167,13 +167,23 @@ section.sec1
     padding-left: 15%;
     padding-right: 15%;
 }
+.s2-container
+{
+    display: flex;
+}
 .s2-description
 {
+    display: flex;
+    flex-direction: column;
     float: left;
 }
 .s2-img
 {
     padding-left: 50px;
+}
+.s2-img img
+{
+    width: 600px;
 }
 
 .sec3
