@@ -161,21 +161,39 @@ section.sec1
     border: 2px solid deepskyblue;
 }
 
-.sec2
+.sec
 {
     padding-top: 10%;;
     padding-left: 15%;
     padding-right: 15%;
+    transition: 1s;
 }
+.sec-img
+{
+    padding-top: 10%;;
+    padding-left: 9%;
+    padding-right: 9%;
+    transition: 1s;
+}
+
+/*Section 2*/
+
 .s2-container
 {
     display: flex;
+    transition: 1s;
 }
 .s2-description
 {
     display: flex;
     flex-direction: column;
     float: left;
+    transition: 1s;
+}
+.s2-description
+{
+    width: 100%;
+    transition: 1s;
 }
 .s2-img
 {
@@ -186,10 +204,50 @@ section.sec1
     width: 600px;
 }
 
-.sec3
+/*Section 3*/
+.s3-img-container
 {
-    padding: 100px;
+    padding-top: 20px;
+    display: flex;
 }
+.s3-img-container h3
+{
+    text-align: center;
+}
+.card-container
+{
+    padding: 10px;
+}
+.s3-img1
+{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+
+    float: left;
+}
+.s3-img1 img
+{
+    border-radius: 5px 5px 0 0;
+}
+.s3-img1:hover
+{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.s3-card-title
+{
+    padding: 2px 16px;
+}
+.s3-img2
+{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 5px;
+
+    float: left;
+}
+
 .sec4
 {
     padding: 100px;
