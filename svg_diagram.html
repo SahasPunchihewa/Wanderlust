@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SVG Diagram</title>
+        <style>
+            body {
+                background-color: bisque;
+                font-family: sans-serif;
+            }
+            .container {
+                background-color: cornflowerblue;
+                border-radius: 15px;
+                color: gold;
+                padding-top: 30px;
+                text-align: center;
+                margin-top: 9%;
+                width: 35%;
+                margin-left: 32.5%;
+                box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+            }
+            #svgDiagram g:hover polyline,
+			#svgDiagram g:hover line {
+				fill: none;
+				stroke-width: 2;
+				stroke: crimson;;
+			}
+            
+            #svgDiagram g polyline,
+			#svgDiagram g line {
+				fill: none;
+				stroke-width: 2;
+				stroke: greenyellow;
+			}
+
+			#svgDiagram g:hover g text,
+			#svgDiagram g:hover text {
+				font-weight: bold;
+			}
+
+			#svgDiagram g:hover polygon,
+			#svgDiagram g:hover rect,
+			#svgDiagram g:focus polygon,
+			#svgDiagram g:focus rect {
+				fill: hsla(24, 20%, 50%,.3);
+				stroke: crimson;
+				stroke-width: 2;
+			}
+            
+            #svgDiagram rect {
+                stroke: greenyellow;
+                background-color: none;
+				stroke-width: 2;
+                fill: none
+			}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Travel Website SVG Diagram</h1>
+            <br/>
+            <svg id="svgDiagram" height="400" width="180">
+                <g id="groupId1">
+                    <rect x="0" y="0" height="50" width="180"/>
+                    <text x="90" y="30" fill="#fff" font-size="18" text-anchor="middle">Presentation Page</text>
+                </g>
+                <g id="groupId2">
+                    <line id="shapeId2" x1="90" y1="50" x2="90" y2="100"></line>
+                    <polyline points="95, 90 90, 100 85, 90"/>
+                </g>
+                <g id="groupId3">
+                    <rect x="0" y="100" height="50" width="180"/>
+                    <text x="90" y="130" fill="#fff" font-size="18" text-anchor="middle">Home Page</text>
+                </g>
+                <g id="groupId4">
+                    <line id="shapeId2" x1="90" y1="150" x2="90" y2="200"></line>
+                    <polyline points="95, 190 90, 200 85, 190"/>
+                </g>
+                <g id="groupId5">
+                    <rect x="0" y="200" height="50" width="180"/>
+                    <text x="90" y="230" fill="#fff" font-size="18" text-anchor="middle">Product Page</text>
+                </g>
+                <!--<g id="groupId6">
+                    <line id="shapeId2" stroke="purple" stroke-width="2" x1="90" y1="250" x2="90" y2="300"></line>
+                    <polyline points="95, 290 90, 300 85, 290" stroke="purple" stroke-width="2" fill="none"/>
+                </g>
+                <g id="groupId7">
+                    <rect x="15" y="300" height="50" width="150" stroke="purple" fill="none" stroke-width="2"/>
+                    <text x="90" y="330" fill="#fff" font-size="14" text-anchor="middle">Page Editor</text>
+                </g>-->
+            </svg>
+        </div>
+    <script>
+        document.getElementById("groupId1").addEventListener("click", function() {
+            document.location.href="presentation.html";
+        });
+        document.getElementById("groupId3").addEventListener("click", function() {
+            document.location.href="index.html";
+        });
+        document.getElementById("groupId5").addEventListener("click", function() {
+            document.location.href="product_page.html";
+        });
+        /*document.getElementById("groupId7").addEventListener("click", function() {
+            document.location.href="page_editor.html";
+        });*/
+    </script>
+    </body>
+</html>
