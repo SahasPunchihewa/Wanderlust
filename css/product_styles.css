@@ -200,30 +200,6 @@
     transform: scale(1.1);
 }
 
-.off-info .sm-title{
-    background: #4DC697;
-    color: white;
-    display: inline-block;
-    padding: 0.5rem;
-    position: absolute;
-    top: 46.4%;
-    left: 28.1%;
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    z-index: 1;
-    letter-spacing: 3px;
-    cursor: pointer;
-}
-.sm-title{
-    font-weight: 300;
-    font-size: 1rem;
-    text-transform: uppercase;
-}
-.sm-title{
-    font-family: 'Roboto', sans-serif;
-    padding: 0.6rem 0;
-    text-transform: capitalize;
-}
 .editer{
 	width:10%;
 	padding:10px;
