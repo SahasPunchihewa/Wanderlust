@@ -110,7 +110,7 @@ function addProduct6(){
 	if(document.getElementById('product6').value == "0" || document.getElementById('product6').value == ""){
 		window.alert("Please Select Quentity First");
 	}else{
-		window.alert(document.getElementById('product6').value+"Hiking Camping Portable Dome Tent is added to your cart. \nRs " + productPrice6);
+		window.alert(document.getElementById('product6').value+" Hiking Camping Portable Dome Tent is added to your cart. \nRs " + productPrice6);
 		quantityArray.push(document.getElementById('product6').value);
 		productArray.push("Hiking Camping Portable Dome Tent");
 		priceArray.push(productPrice6);	
