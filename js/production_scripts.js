@@ -50,7 +50,7 @@ function validateForm(){
 
 function addProduct1(){
 	productPrice1 = document.getElementById('product1').value*3500;
-	if(document.getElementById('product1').value == ""){
+	if(document.getElementById('product3').value == "0" || document.getElementById('product1').value == ""){
 		window.alert("Please Select Quentity First");
 	}else{
 		window.alert(document.getElementById('product1').value+" Traditional Sri Lankan Wooden Masks is added to your cart. \nRs"+ productPrice1);
@@ -62,7 +62,7 @@ function addProduct1(){
 }
 function addProduct2(){
 	productPrice2 = document.getElementById('product2').value*2500;
-	if(document.getElementById('product2').value == ""){
+	if(document.getElementById('product3').value == "0" || document.getElementById('product2').value == ""){
 		window.alert("Please Select Quentity First");
 	}else{
 		window.alert(document.getElementById('product2').value+" Mens Travelling Backpack is added to your cart. \nRs"+ productPrice2);
@@ -74,7 +74,7 @@ function addProduct2(){
 
 function addProduct3(){
 	productPrice3 = document.getElementById('product3').value*1100;
-	if(document.getElementById('product3').value == ""){
+	if(document.getElementById('product3').value == "0" || document.getElementById('product3').value == ""){
 		window.alert("Please Select Quentity First");
 	}else{
 		window.alert(document.getElementById('product2').value+" TOICA Hat is added to your cart. \nRs"+ productPrice3);
@@ -85,7 +85,7 @@ function addProduct3(){
 }
 function addProduct4(){
 	productPrice4 = document.getElementById('product4').value*1650;
-	if(document.getElementById('product4').value == ""){
+	if(document.getElementById('product3').value == "0" || document.getElementById('product4').value == ""){
 		window.alert("Please Select Quentity First");
 	}else{
 		window.alert(document.getElementById('product4').value+" Hawaiian Shirt is added to your cart. \nRs"+ productPrice4);
@@ -96,7 +96,7 @@ function addProduct4(){
 }
 function addProduct5(){
 	productPrice5 = document.getElementById('product5').value*2470;
-	if(document.getElementById('product5').value == ""){
+	if(document.getElementById('product3').value == "0" || document.getElementById('product5').value == ""){
 		window.alert("Please Select Quentity First");
 	}else{
 		window.alert(document.getElementById('product5').value+" Elephant Design Hand Bag is added to your cart. \nRs"+ productPrice5);
@@ -107,7 +107,7 @@ function addProduct5(){
 }
 function addProduct6(){
 	productPrice6 = document.getElementById('product6').value*6300;
-	if(document.getElementById('product6').value == ""){
+	if(document.getElementById('product3').value == "0" || document.getElementById('product6').value == ""){
 		window.alert("Please Select Quentity First");
 	}else{
 		window.alert(document.getElementById('product6').value+"Hiking Camping Portable Dome Tent is added to your cart. \nRs " + productPrice6);
@@ -118,7 +118,7 @@ function addProduct6(){
 }
 function addProduct7(){
 	productPrice7 = document.getElementById('product7').value*4900;
-	if(document.getElementById('product7').value == ""){
+	if(document.getElementById('product3').value == "0" || document.getElementById('product7').value == ""){
 		window.alert("Please Select Quentity First");
 	}else{
 		window.alert(document.getElementById('product7').value+" Brass Elephant Statue is added to your cart. \nRs"+ productPrice7);
@@ -129,7 +129,7 @@ function addProduct7(){
 }
 function addProduct8(){
 	productPrice8 = document.getElementById('product8').value*4800;
-	if(document.getElementById('product8').value == ""){
+	if(document.getElementById('product3').value == "0" || document.getElementById('product8').value == ""){
 		window.alert("Please Select Quentity First");
 	}else{
 		window.alert(document.getElementById('product8').value+" Sri Lanka traditional wall mask is added to your cart. \nRs"+ productPrice8);
