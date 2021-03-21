@@ -77,7 +77,7 @@ function addProduct3(){
 	if(document.getElementById('product3').value == "0" || document.getElementById('product3').value == ""){
 		window.alert("Please Select Quentity First");
 	}else{
-		window.alert(document.getElementById('product2').value+" TOICA Hat is added to your cart. \nRs"+ productPrice3);
+		window.alert(document.getElementById('product3').value+" TOICA Hat is added to your cart. \nRs"+ productPrice3);
 		quantityArray.push(document.getElementById('product3').value);
 		productArray.push("TOICA Hat");
 		priceArray.push(productPrice3);	
