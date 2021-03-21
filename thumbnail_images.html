@@ -11,6 +11,10 @@
                 <option>Light Mode</option>
                 <option>Dark Mode</option>
             </select>
+            <select>
+                <option>Light Mode Text</option>
+                <option>Dark Mode Text</option>
+            </select>
         </div>
         <section class="thumb-img">
             <div class="container">
@@ -20,7 +24,7 @@
                 <div class="thumb-img-container">
                     <div class="thumb-card-container">
                         <div class="thumb-imgs">
-                            <img src="img/cards/galle.png" alt="galle-pic"/>
+                            <img src="img/thumbnails/galle.png" alt="galle-pic" onClick="myFunction(this);"/>
                             <div class="thumb-card-title">
                                 <h3>Galle</h3>
                             </div>
@@ -28,7 +32,7 @@
                     </div>
                     <div class="thumb-card-container">
                         <div class="thumb-imgs">
-                            <img src="img/cards/kandy.png" alt="kandy-pic"/>
+                            <img src="img/thumbnails/kandy.png" alt="kandy-pic"/>
                             <div class="thumb-card-title">
                                 <h3>Kandy</h3>
                             </div>
@@ -36,7 +40,7 @@
                     </div>
                     <div class="thumb-card-container">
                         <div class="thumb-imgs">
-                            <img src="img/cards/jaffna.png" alt="jaffna-pic"/>
+                            <img src="img/thumbnails/jaffna.png" alt="jaffna-pic"/>
                             <div class="thumb-card-title">
                                 <h3>Jaffna</h3>
                             </div>
@@ -44,7 +48,7 @@
                     </div>
                     <div class="thumb-card-container">
                         <div class="thumb-imgs">
-                            <img src="img/cards/nuwaraeliya.png" alt="nuwaraeliya-pic"/>
+                            <img src="img/thumbnails/nuwaraeliya.png" alt="nuwaraeliya-pic"/>
                             <div class="thumb-card-title">
                                 <h3>Nuwara Eliya</h3>
                             </div>
@@ -52,19 +56,29 @@
                     </div>
                     <div class="thumb-card-container">
                         <div class="thumb-imgs">
-                            <img src="img/cards/anuradhapura.png" alt="anuradhapura-pic"/>
+                            <img src="img/thumbnails/anuradhapura.png" alt="anuradhapura-pic"/>
                             <div class="thumb-card-title">
                                 <h3>Anuradhapura</h3>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div>
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <img id="expandedImg" style="width:50%">
+                    <div id="imgtext"></div>
+                </div>
             </div>
         </section>
         <script>
-            document.getElementById("groupId1").addEventListener("click", function() {
-                document.location.href="presentation.html";
-            });
+            function myFunction(imgs) {
+                var expandImg = document.getElementById("expandedImg");
+                var imgText = document.getElementById("imgtext");
+                expandImg.src = imgs.src;
+                var des1 = "Galle is a beautiful city";
+                imgText.innerHTML = des1;
+                expandImg.parentElement.style.display = "block";
+            }
         </script>
     </body>
 </html>
