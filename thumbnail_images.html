@@ -24,7 +24,7 @@
                 <div class="thumb-img-container">
                     <div class="thumb-card-container">
                         <div class="thumb-imgs">
-                            <img src="img/thumbnails/galle.png" alt="galle-pic" onClick="myFunction(this);"/>
+                            <img src="img/thumbnails/galle.jpg" alt="galle-pic" class="image" id="galle" onClick="imgLarger(this);"/>
                             <div class="thumb-card-title">
                                 <h3>Galle</h3>
                             </div>
@@ -32,7 +32,7 @@
                     </div>
                     <div class="thumb-card-container">
                         <div class="thumb-imgs">
-                            <img src="img/thumbnails/kandy.png" alt="kandy-pic"/>
+                            <img src="img/thumbnails/kandy.jpg" alt="kandy-pic" class="image" id="kandy" onClick="imgLarger(this);"/>
                             <div class="thumb-card-title">
                                 <h3>Kandy</h3>
                             </div>
@@ -40,7 +40,7 @@
                     </div>
                     <div class="thumb-card-container">
                         <div class="thumb-imgs">
-                            <img src="img/thumbnails/jaffna.png" alt="jaffna-pic"/>
+                            <img src="img/thumbnails/jaffna.jpg" alt="jaffna-pic" class="image" id="jaffna" onClick="imgLarger(this);"/>
                             <div class="thumb-card-title">
                                 <h3>Jaffna</h3>
                             </div>
@@ -48,7 +48,7 @@
                     </div>
                     <div class="thumb-card-container">
                         <div class="thumb-imgs">
-                            <img src="img/thumbnails/nuwaraeliya.png" alt="nuwaraeliya-pic"/>
+                            <img src="img/thumbnails/nuwara-eliya.jpg" alt="nuwara-eliya-pic" class="image" id="nuwaraEliya" onClick="imgLarger(this);"/>
                             <div class="thumb-card-title">
                                 <h3>Nuwara Eliya</h3>
                             </div>
@@ -56,28 +56,63 @@
                     </div>
                     <div class="thumb-card-container">
                         <div class="thumb-imgs">
-                            <img src="img/thumbnails/anuradhapura.png" alt="anuradhapura-pic"/>
+                            <img src="img/thumbnails/anuradhapura.jpg" alt="anuradhapura-pic" class="image" id="anuradhapura" onClick="imgLarger(this);"/>
                             <div class="thumb-card-title">
                                 <h3>Anuradhapura</h3>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                    <img id="expandedImg" style="width:50%">
-                    <div id="imgtext"></div>
+                <div class="imageViewer">
+                    <!--<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>-->
+                    <img id="imgShow"/>
+                    <span id="imgDescription"></span>
                 </div>
             </div>
         </section>
         <script>
-            function myFunction(imgs) {
-                var expandImg = document.getElementById("expandedImg");
-                var imgText = document.getElementById("imgtext");
-                expandImg.src = imgs.src;
-                var des1 = "Galle is a beautiful city";
-                imgText.innerHTML = des1;
-                expandImg.parentElement.style.display = "block";
+            function imgLarger(imgs) {
+                var extendImg = document.getElementById("imgShow");
+                var description = document.getElementById("imgDescription");
+                extendImg.src = imgs.src;
+                
+                var des1 = "Galle is a beautiful city.";
+                var des2 = "Kandy is a beautiful city.";
+                var des3 = "Jaffna is a beautiful city.";
+                var des4 = "Nuwara Eliya is a beautiful city.";
+                var des5 = "Anuradhapura is a beautiful city.";
+                
+                /*var des = [];
+                des[0] = des1;
+                des[1] = des2;
+                des[2] = des3;
+                des[3] = des4;
+                des[4] = des5;
+                
+                var ids = [];
+                ids[0] = document.getElementsByClassName("image")[0].id;
+                ids[1] = document.getElementsByClassName("image")[1].id;
+                ids[2] = document.getElementsByClassName("image")[2].id;
+                ids[3] = document.getElementsByClassName("image")[3].id;
+                ids[4] = document.getElementsByClassName("image")[4].id;
+                
+                for (var i=0; i < 5; i++) {
+                    if (ids[i] == "galle") {
+                    description.innerHTML = des[i];
+                    }
+                    else if (ids[i] == "kandy") {
+                    description.innerHTML = des[i];
+                    }
+                    else if (ids[i] == "jaffna") {
+                    description.innerHTML = des[i];
+                    }
+                    else if (ids[i] == "nuwaraEliya") {
+                    description.innerHTML = des[i];
+                    }
+                    else if (ids[i] == "anuradhapura"){
+                    description.innerHTML = des[i];
+                    }
+                }*/
             }
         </script>
     </body>
