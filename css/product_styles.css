@@ -86,6 +86,7 @@
 }
 
 .card .title{
+	font-family:Verdana;
 	color:#545C59;
 	cursor:pointer;
 	font-size:20px;
