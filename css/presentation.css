@@ -22,14 +22,14 @@
 }
 .content h1{
 	font-size:78px;
-	font-family:Comic Sans MS;
+	font-family:"Montserrat";
 }
 .content p{
 	font-size:35px;
 	margin:20px auto;
 	font-weight:100;
 	line-height:25px;
-	font-family:Bradley Hand ITC;
+	font-family:"Montserrat";
 }
 
 .bubble img{
@@ -115,7 +115,7 @@
 }
 .members{
 	padding:5px;
-	margin - left:25px;
+	margin-left:25px;
 	top:60%;
 	font-size:25px;
 	color:#fff;
@@ -156,8 +156,3 @@ body a:hover{
 .members h3{
 	padding-left:20%;
 }
-
-
-
-
-
