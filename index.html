@@ -1,277 +1,56 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Presentation Page</title>
+		<link rel="stylesheet" type="text/css" href="css/presentation.css">
+	</head>
+	<style>
+		body{
+			width:100%;
+			height:100vh;
+			background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/bg3.jpg);
+			background-size:cover;
+			background-position:center;		
+		}	
+	</style>	
+	<body>
+		<script>
+			setTimeout(function(){
+			window.location.href="index.html";},6000);
+		</script>
+			<div class="content">
+				<h1>Wanderlust</h1>
+				<p>“The journey of a thousand miles begins with a single step.”</p>
+					
+			</div>
+			<div class="bubble">
+						<img src="img/star.png">
+						<img src="img/star.png">
+						<img src="img/star.png">
+						<img src="img/star.png">
+						<img src="img/star.png">
+						<img src="img/star.png">
+						<img src="img/star.png">
+						<img src="img/star.png">
+						<img src="img/star.png">
+						<img src="img/star.png">
+						<img src="img/star.png">
+						<img src="img/star.png">
+						<img src="img/star.png">	
+			</div>
+			<div class="members">
+				<h3>Team members:</h3>
+				<ul>
+					<li>Dineth Chamika - Student 1</li>
+					<li>Sahas Punchihewa - Student 2</li>
+					<li>Pramod Perera - Student 3</li>
+					<li>Visal Chamuditha - Student 4</li>
+					
+				</ul>
+					
+			</div>
+			<a href="page editer.html" target="_blank">PAGE EDITER</a>
+	
+	</body>
 
-    <head>
-        <title>Wanderlust</title>
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-    </head>
-
-    <body>
-        <nav class="nav-header" id="header">
-            <a href="index.html">
-                <div class="h-logo">
-                    <img id="h-icon" src="img/logo.png">
-                </div>
-                <div class="h-title" id="nav-title">
-                    Wanderlust
-                </div>
-            </a>
-            <ul class="h-ul" id="nav-anc">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#services">Our Services</a></li>
-                <li><a href="#locations">Locations</a></li>
-                <li><a href="product_Page.html">Products</a></li>
-                <li><a href="#">Page 4</a></li>
-            </ul>
-        </nav>
-        <section class="sec1">
-            <div class="main-description" id="main-title">
-                <div class="m-title">
-                    Welcome To Wanderlust
-                </div>
-                <div class="s-title">
-                    Explore The World With Our Graedt Services
-                </div>
-                <div class="m-buttons">
-                    <a href="#">Learn More</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="sec" id="services">
-            <div class="s2-container">
-                <div class="s2-description">
-                    <h1>Book Now, Travel Whenever</h1>
-                    <p>Now is the perfect 
-                        time to turn your travel dreams into vacations 
-                        to look forward to. Dont't worry about your trip plans, 
-                        We can manage your vacation
-                    </p>
-                </div>
-                <div class="s2-img">
-                    <img src="img/sec1.png">
-                </div>
-            </div>
-        </section>
-
-        <section class="sec-img" id="locations">
-            <div class="s3-container">
-                <div class="s3-description">
-                    <h1>Find your next destination</h1>
-                    <p>Description</p>
-                </div>
-
-               <div class="s3-img-container">
-                   <div class="card-container">
-                    <div class="s3-img1">
-                        <img src="img/cards/galle.png">
-                        <div class="s3-card-title">
-                            <h3>Galle</h3>
-                        </div>
-                    </div>
-                   </div>
-                   <div class="card-container">
-                    <div class="s3-img1">
-                        <img src="img/cards/kandy.png">
-                        <div class="s3-card-title">
-                            <h3>Kandy</h3>
-                        </div>
-                    </div>
-                   </div>
-                   <div class="card-container">
-                    <div class="s3-img1">
-                        <img src="img/cards/jaffna.png">
-                        <div class="s3-card-title">
-                            <h3>Jaffna</h3>
-                        </div>
-                    </div>
-                   </div>
-                   <div class="card-container">
-                    <div class="s3-img1">
-                        <img src="img/cards/nuwaraeliya.png">
-                        <div class="s3-card-title">
-                            <h3>Nuwara Eliya</h3>
-                        </div>
-                    </div>
-                   </div>
-            </div>
-        </section>
-
-        <section class="sec">
-            <div class="s-q-container">
-                <form name="qform">
-                    <div class="q-head">
-                        <h1>Query Form</h1>
-                    </div>
-                    <div class="form-input">
-                        <div class="name">
-                            <label for="uname">Uname :</label>
-                            <input type="text" name="uname" id="uname">
-                        </div>
-                        <div class="email">
-                            <label for="email">E-Mail :</label>
-                            <input type="text" name="email" id="email">
-                        </div>
-                        <div class="subjects">
-                            <label for="subject">Querry Subject :</label>
-                            <select name="subject" id="subject">
-                                <option value="sub1">Subject 1</option>
-                                <option value="sub2">Subject 2</option>
-                                <option value="sub3">Subject 3</option>
-                            </select>
-                        </div>
-                        <div class="query">
-                            <label for="query">Querry Details :</label>
-                            <textarea name="query" id="query"></textarea>
-                        </div>
-                        <div class="buttons">
-                            <button type="button" onclick="querry()">View Querry</button>
-                        </div>
-                    </div>
-                    <div class="form-Output" id="form-Output">
-                        <div class="name">
-                            Name : <span id="oname"></span>
-                        </div>
-                        <div class="email">
-                            E-Mail : <span id="omail"></span>
-                        </div>
-                        <div class="subjects">
-                            Subject : <span id="osub"></span>
-                        </div>
-                        <div class="query">
-                            Details : <span id="oquery"></span>
-                        </div>
-                        <div class="buttons">
-                            <button type="button" onclick="qEdit()">Edit</button>
-                            <button type="button" onclick="qSend()">Send</button>
-                        </div>
-                    </div>
-                    
-                
-                </form>
-            </div>
-        </section>
-
-        <section class="sec">
-            <div class="s2-container">
-                <div class="s2-img">
-                    <img src="img/logolarge.png">
-                </div>
-                <div class="s2-description">
-                    <h1>About Us</h1>
-                    <p>Wanderlust is a online travel managemet platform that manages trip tasks 
-                        and selct perfect packages for you.
-                    </p>
-                </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="sec-img" id="locations">
-            <div class="s3-container">
-                <div class="s3-description">
-                    <h1>Out Team</h1>
-                    <p>The Force Behind This Travel Platform</p>
-                </div>
-
-               <div class="s3-img-container">
-                   <div class="card-container">
-                    <div class="s3-img1">
-                        <img src="img/profiles/dineth.png">
-                        <div class="s3-card-title">
-                            <h3>Dineth Chamika</h3>
-                            <p>Student 1</p>
-                        </div>
-                    </div>
-                   </div>
-                   <div class="card-container">
-                    <div class="s3-img1">
-                        <img src="img/profiles/sahas.png">
-                        <div class="s3-card-title">
-                            <h3>Pramuditha Sahas</h3>
-                            <p>Student 2</p>
-                        </div>
-                    </div>
-                   </div>
-                   <div class="card-container">
-                    <div class="s3-img1">
-                        <img src="img/profiles/pramod.png">
-                        <div class="s3-card-title">
-                            <h3>Pramod Perera</h3>
-                            <p>Student 3</p>
-                        </div>
-                    </div>
-                   </div>
-                   <div class="card-container">
-                    <div class="s3-img1">
-                        <img src="img/profiles/visal.png">
-                        <div class="s3-card-title">
-                            <h3>Visal Chamuditha</h3>
-                            <p>Student 4</p>
-                        </div>
-                    </div>
-                   </div>
-            </div>
-        </section>
-
-        <div class="empty"></div>
-
-
-        <!--Footer-->
-
-        <div class="footer">
-            <div class="f-container">
-                <div class="f-description">
-                    <div class="f-title">
-                        <div class="f-logo">
-                            <img src="img/logo.png">
-                        </div>
-                        <div class="f-title">
-                        <h1>Wanderlust</h1>
-                        </div>
-                    </div>
-                    <div class="description">
-                        <p class="f-desc-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                             Sed augue lacus viverra vitae congue eu consequat ac. 
-                             Non tellus orci ac auctor augue. 
-                             Cursus vitae congue mauris rhoncus aenean. 
-                            Ut enim blandit volutpat maecenas volutpat blandit.
-                        </p>
-                    </div>
-                </div>
-                <div class="f-nav">
-                    <h1>Links</h1>
-                    <div class="f-nav-a">
-                        <p><a href="#" class="active">Home</a></p>
-                        <p><a href="#services">Our&nbsp;Services</a></p>
-                        <p><a href="#locations">Locations</a></p>
-                        <p><a href="product_Page.html">Products</a></p>
-                        <p><a href="#">Page 4</a></p>
-                    </div>
-                </div>
-                <div class="f-contact">
-                    <h1>Contact Us</h1>
-                    <div class="c-details">
-                        <div class="c-names">
-                            <p>Address</p>
-                            <p>E-Mail</p>
-                            <p>Telephone</p>
-                        </div>
-                        <div class="c-links">
-                            <p><a href="#">98, Colobo 07</a></p>
-                            <p><a href="admin.contact@travel.com">admin.contact@wanderlust.com</a></p>
-                            <p><a href="0198383948">0198383948</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="f-coppy">
-                <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Wanderlust All Rights Reserved</p>
-            </div>
-        </div>
-
-        <script src="js/script.js"></script>
-        <script src="js/qform.js"></script>
-    </body>
 </html>
