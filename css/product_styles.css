@@ -36,7 +36,6 @@
 	background-color:red;
 }
 .content form{
-	font-size:17px;
 	color:#fff;
 	height:20%;
 	width:25%;
@@ -92,6 +91,7 @@
 	cursor:pointer;
 	font-size:20px;
 	font-weight:bold;
+	font-family:"Montserrat";
 }
 .card image{
 	max-width:100%;
@@ -141,6 +141,9 @@
     font-size: 1rem;
     text-transform: uppercase;
 }
+.rating span{
+    color: #7AFA6B;
+}
 .product-name{
     color: black;
     display: block;
@@ -176,12 +179,12 @@
 	margin:5%;
 }
 .order-btn button{
-	font-family:Bahnschrift SemiBold;
 	cursor:pointer;
 	margin:1%;
 	margin-left:85%;
 	position:relative;
 	background-color:#20DDB8;
+	font-family:"Montserrat";
 	font-size:18px;
 	padding:10px;
 	border:none;
