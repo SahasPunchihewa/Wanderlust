@@ -292,17 +292,6 @@ section.sec1
     border-radius: 5px;
     float: left;
 }
-.form-input
-{
-    float: left;
-    padding: 20px;
-}
-.form-Output
-{
-    float: left;
-    /*display: none;*/
-    padding: 20px;
-}
 
 .sec4
 {
@@ -313,6 +302,14 @@ section.sec1
     padding: 100px;
 }
 
+.form-card
+{
+    width:40%;
+}
+.card-container2
+{
+    width: 100%;
+}
 /*Footer*/
 
 .footer
