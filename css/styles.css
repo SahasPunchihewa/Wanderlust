@@ -285,6 +285,11 @@ section.sec1
     float: left;
 }
 
+.form-Output
+{
+    display: none;
+}
+
 .sec4
 {
     padding: 100px;

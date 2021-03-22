@@ -100,32 +100,53 @@
         <section class="sec">
             <div class="s-q-container">
                 <form name="qform">
-                    <div class="q-head">
-                        <h1>Query Form</h1>
+                    <div class="form-input">
+                        <div class="q-head">
+                            <h1>Query Form</h1>
+                        </div>
+                        <div class="name">
+                            <label for="uname">Uname :</label>
+                            <input type="text" name="uname" id="uname">
+                        </div>
+                        <div class="email">
+                            <label for="email">E-Mail :</label>
+                            <input type="text" name="email" id="email">
+                        </div>
+                        <div class="subjects">
+                            <label for="subject">Querry Subject :</label>
+                            <select name="subject" id="subject">
+                                <option value="sub1">Subject 1</option>
+                                <option value="sub2">Subject 2</option>
+                                <option value="sub3">Subject 3</option>
+                            </select>
+                        </div>
+                        <div class="query">
+                            <label for="query">Querry Details :</label>
+                            <textarea name="query" id="query"></textarea>
+                        </div>
+                        <div class="buttons">
+                            <button type="button" onclick="querry()">View Querry</button>
+                        </div>
                     </div>
-                    <div class="name">
-                        <label for="uname">Uname :</label>
-                        <input type="text" name="uname" id="uname">
+                    <div class="form-Output" id="form-Output">
+                        <div class="o-name">
+                            Name : <span id="oname"></span>
+                        </div>
+                        <div class="o-email">
+                            E-Mail : <span id="omail"></span>
+                        </div>
+                        <div class="o-subjects">
+                            Subject : <span id="osub"></span>
+                        </div>
+                        <div class="o-query">
+                            Details : <span id="oquery"></span>
+                        </div>
+                        <div class="buttons">
+                            <button type="button" onclick="qEdit()">Edit</button>
+                            <button type="button" onclick="qSend()">Send</button>
+                        </div>
                     </div>
-                    <div class="email">
-                        <label for="email">E-Mail :</label>
-                        <input type="text" name="email" id="email">
-                    </div>
-                    <div class="subjects">
-                        <label for="subject">Subject :</label>
-                        <select name="subject" id="subject">
-                            <option value="sub1">Subject 1</option>
-                            <option value="sub2">Subject 2</option>
-                            <option value="sub3">Subject 3</option>
-                        </select>
-                    </div>
-                    <div class="query">
-                        <label for="query">Details :</label>
-                        <textarea name="query" id="query"></textarea>
-                    </div>
-                    <div class="buttons">
-                        <button type="button" onclick="querry()">Submit</button>
-                    </div>
+                    
                 
                 </form>
             </div>
