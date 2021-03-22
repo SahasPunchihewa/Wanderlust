@@ -226,6 +226,14 @@ section.sec1
 {
     padding: 10px;
 }
+.query
+{
+    padding: 10px;
+}
+.buttons
+{
+    padding: 10px;
+}
 
 /*Section 3*/
 .s3-img-container
@@ -284,10 +292,16 @@ section.sec1
     border-radius: 5px;
     float: left;
 }
-
+.form-input
+{
+    float: left;
+    padding: 20px;
+}
 .form-Output
 {
-    display: none;
+    float: left;
+    /*display: none;*/
+    padding: 20px;
 }
 
 .sec4

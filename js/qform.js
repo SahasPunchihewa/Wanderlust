@@ -1,5 +1,6 @@
 function querry()
 {
+    console.log("dsakfjaslkdja;kl");
     var uName=document.qform.uname.value;
     var eMail=document.qform.email.value;
     var Subject=document.qform.subject.value;
@@ -94,7 +95,7 @@ function qSend()
 
 /*References
 https://www.tutorialspoint.com/javascript/javascript_form_validations.htm
-
+https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 
 
 
