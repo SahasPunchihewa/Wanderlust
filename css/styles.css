@@ -226,6 +226,14 @@ section.sec1
 {
     padding: 10px;
 }
+.query
+{
+    padding: 10px;
+}
+.buttons
+{
+    padding: 10px;
+}
 
 /*Section 3*/
 .s3-img-container
@@ -294,6 +302,14 @@ section.sec1
     padding: 100px;
 }
 
+.form-card
+{
+    width:40%;
+}
+.card-container2
+{
+    width: 100%;
+}
 /*Footer*/
 
 .footer
