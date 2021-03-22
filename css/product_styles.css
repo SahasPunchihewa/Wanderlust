@@ -1,7 +1,7 @@
 *{
 	margin:0;
 	padding:0;
-	font-family:Verdana;
+	font-family:"Montserrat";
 
 	
 }
@@ -20,7 +20,7 @@
 	position:absolute;
 	top:5%;
 	text-align:center;
-	font-family:Comic Sans MS;
+	font-family:"Montserrat";
 	
 }
 .content p{
@@ -45,8 +45,8 @@
 	margin:10% 35%;
 	border-radius:10px;
 }
-.col-75 input[type="text"],
-.col-75 input[type="email"]{
+	.col-75 input[type="text"],
+	.col-75 input[type="email"]{
 	border:1px solid lightgray;
 	border-radius:3px;
 	padding:3px;
@@ -79,14 +79,14 @@
 	padding:1em;
 	box-shadow:5px 10px 5px #b2bec3;
 	text-align:center;
-	font-family:Biome;
+	font-family:"Montserrat";
 }
 
 .card .title{
 	cursor:pointer;
 	font-size:20px;
 	font-weight:bold;
-	font-familyComic Sans MS;
+	font-family:"Montserrat";
 }
 .card image{
 	max-width:100%;
@@ -106,7 +106,7 @@
 	padding:1em;
 	border-radius:5px;
 	font-weight:bold;
-	font-familyComic Sans MS;
+	font-family:"Montserrat";
 	cursor:pointer;
 	width:50%;
 	transition:0.6s ease;
@@ -145,7 +145,7 @@
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: bold;
-	font-family:Bahnschrift SemiBold;
+	font-family:"Montserrat";
 }
 .product-price{
     padding-top: 0.6rem;
@@ -178,7 +178,7 @@
 	margin-left:85%;
 	position:relative;
 	background-color:#20DDB8;
-	font-family:Bahnschrift SemiBold;
+	font-family:"Montserrat";
 	font-size:18px;
 	padding:10px;
 	border:none;
