@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+.student_image{
+ position: relative;
+ width: 300px;
+ height: 300px;
+ float: left;
+ margin-right: 10px;
+ display: flex;
+}
+.details{
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ background: black;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+
+
+	
+	
+}
+.student_image:hover{
+	cursor: pointer;
+}
+
+.details:hover{
+ width: 250px;
+ padding: 8px 15px;
+ visibility: visible;
+ opacity: 0.7;
+ vertical-align: middle;
+height:auto;
+}
+
+img{
+  border: 1px solid #ddd; 
+  border-radius: 4px;  
+  padding: 10px; 
+  width: 300px; 
+  
+}
+body{
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 15px;
+	background-color:#FAEBD7;
+	
+}
