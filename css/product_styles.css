@@ -179,12 +179,12 @@
 	margin:5%;
 }
 .order-btn button{
+	font-family:Bahnschrift SemiBold;
 	cursor:pointer;
 	margin:1%;
 	margin-left:85%;
 	position:relative;
 	background-color:#20DDB8;
-	font-family:"Montserrat";
 	font-size:18px;
 	padding:10px;
 	border:none;
