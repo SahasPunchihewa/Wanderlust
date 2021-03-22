@@ -105,15 +105,15 @@
                     </div>
                     <div class="name">
                         <label for="uname">Uname :</label>
-                        <input type="text" name="uname">
+                        <input type="text" name="uname" id="uname">
                     </div>
                     <div class="email">
                         <label for="email">E-Mail :</label>
-                        <input type="text" name="email">
+                        <input type="text" name="email" id="email">
                     </div>
                     <div class="subjects">
                         <label for="subject">Subject :</label>
-                        <select name="subject">
+                        <select name="subject" id="subject">
                             <option value="sub1">Subject 1</option>
                             <option value="sub2">Subject 2</option>
                             <option value="sub3">Subject 3</option>
@@ -121,7 +121,10 @@
                     </div>
                     <div class="query">
                         <label for="query">Details :</label>
-                        <textarea name="query"></textarea>
+                        <textarea name="query" id="query"></textarea>
+                    </div>
+                    <div class="buttons">
+                        <button type="button" onclick="querry()">Submit</button>
                     </div>
                 
                 </form>
@@ -248,5 +251,6 @@
         </div>
 
         <script src="js/script.js"></script>
+        <script src="js/qform.js"></script>
     </body>
 </html>
