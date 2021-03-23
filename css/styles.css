@@ -504,7 +504,7 @@ section.sec1
 }
 .a-p-edit
 {
-    background-color: deepskyblue;
+    background-color: dodgerblue;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
@@ -518,7 +518,7 @@ section.sec1
 }
 .a-p-edit:hover
 {
-    background-color:dodgerblue;
+    background-color:darkblue;
     transition: .5s;
 }
 .page-e
