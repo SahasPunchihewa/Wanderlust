@@ -157,6 +157,7 @@ function myFunction()
         header.classList.add("sticky");
         title.classList.add("st-title");
         anchor.classList.add("st-anc");
+		mainTitle.classList.add("main-sticky");
         headicon.src="img/logo2.png";
     }
     else
@@ -164,6 +165,7 @@ function myFunction()
         header.classList.remove("sticky");
         title.classList.remove("st-title");
         anchor.classList.remove("st-anc");
+		mainTitle.classList.remove("main-sticky");
         headicon.src="img/logo.png";
     }
 }

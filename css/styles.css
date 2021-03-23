@@ -22,6 +22,7 @@ body
     /*padding: 10px 50px;*/
     box-sizing: border-box;
     transition: 1s;
+    z-index: 1;
 }
 .sticky
 {
@@ -37,6 +38,7 @@ body
     padding-bottom: 10px;
     box-sizing: border-box;
     transition: 1s;
+    z-index: 1;
 }
 nav .h-logo
 {
