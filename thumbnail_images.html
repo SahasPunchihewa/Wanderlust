@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <title>Thumbnail Images</title>
         <link rel="stylesheet" href="css/thumbnail_images.css"/>
-        <link rel="stylesheet" href="css/styles.css"/>
     </head>
     <body id="bodyId">
         <div id="coloursChanger">
@@ -34,7 +33,7 @@
                 <div class="thumb-img-container">
                     <div class="thumb-card-container">
                         <div class="thumb-imgs">
-                            <img src="img/thumbnails/galle.jpg" alt="galle-pic" class="image" id="galle" onmouseover="imgLarger(this);"/>
+                            <img src="img/thumbnails/galle.jpg" alt="Galle is a beautiful city." class="image" id="galle" onmouseover="imgLarger(this);"/>
                             <div class="thumb-card-title">
                                 <h3 id="cardTitle1">Galle</h3>
                             </div>
@@ -42,7 +41,7 @@
                     </div>
                     <div class="thumb-card-container">
                         <div class="thumb-imgs">
-                            <img src="img/thumbnails/kandy.jpg" alt="kandy-pic" class="image" id="kandy" onmouseover="imgLarger(this);"/>
+                            <img src="img/thumbnails/kandy.jpg" alt="Kandy is a sacred city." class="image" id="kandy" onmouseover="imgLarger(this);"/>
                             <div class="thumb-card-title">
                                 <h3 id="cardTitle2">Kandy</h3>
                             </div>
@@ -50,7 +49,7 @@
                     </div>
                     <div class="thumb-card-container">
                         <div class="thumb-imgs">
-                            <img src="img/thumbnails/jaffna.jpg" alt="jaffna-pic" class="image" id="jaffna" onmouseover="imgLarger(this);"/>
+                            <img src="img/thumbnails/jaffna.jpg" alt="Jaffna is a big city." class="image" id="jaffna" onmouseover="imgLarger(this);"/>
                             <div class="thumb-card-title">
                                 <h3 id="cardTitle3">Jaffna</h3>
                             </div>
@@ -58,7 +57,7 @@
                     </div>
                     <div class="thumb-card-container">
                         <div class="thumb-imgs">
-                            <img src="img/thumbnails/nuwara-eliya.jpg" alt="nuwara-eliya-pic" class="image" id="nuwaraEliya" onmouseover="imgLarger(this);"/>
+                            <img src="img/thumbnails/nuwara-eliya.jpg" alt="Nuwara Eliya is a cold city." class="image" id="nuwaraEliya" onmouseover="imgLarger(this);"/>
                             <div class="thumb-card-title">
                                 <h3 id="cardTitle4">Nuwara Eliya</h3>
                             </div>
@@ -66,7 +65,7 @@
                     </div>
                     <div class="thumb-card-container">
                         <div class="thumb-imgs">
-                            <img src="img/thumbnails/anuradhapura.jpg" alt="anuradhapura-pic" class="image" id="anuradhapura" onmouseover="imgLarger(this);" onmouseout="imgNone(this);"/>
+                            <img src="img/thumbnails/anuradhapura.jpg" alt="Anuradhapura is an ancient city." class="image" id="anuradhapura" onmouseover="imgLarger(this);" onmouseout="imgNone(this);"/>
                             <div class="thumb-card-title">
                                 <h3 id="cardTitle5">Anuradhapura</h3>
                             </div>
@@ -178,7 +177,9 @@
                 /*extendImg.style.visibility = "visible"*/
                 extendImg.src = imgs.src;
                 var description = document.getElementById("imgDescription");
+                description.textContent = imgs.alt;
                 /*description.textContent = "I came, I saw, I conquered";*/
+                
             }
                 
                 /*var des1 = "Galle is a beautiful city.";
