@@ -105,49 +105,82 @@
                     </div>
                     <div class="s3-img-container">
                         <div class="card-container2">
-                            <div class="s3-img1 form-card" id="form-card">
-                                <div class="name">
-                                    <label for="uname">Uname :</label>
-                                    <input type="text" name="uname" id="uname">
+                            <div class="s4-img1 form-card" id="form-card">
+                                <div class="form-left">
+                                    <div class="name">
+                                        <label for="uname">Uname :</label>
+                                    </div>
+                                    <div class="email">
+                                        <label for="email">E-Mail :</label>
+                                    </div>
+                                    <div class="subjects">
+                                        <label for="subject">Querry Subject :</label>
+                                    </div>
+                                    <div class="query">
+                                        <label for="query">Querry Details :</label>
+                                    </div>
                                 </div>
-                                <div class="email">
-                                    <label for="email">E-Mail :</label>
-                                    <input type="text" name="email" id="email">
-                                </div>
-                                <div class="subjects">
-                                    <label for="subject">Querry Subject :</label>
-                                    <select name="subject" id="subject">
-                                        <option value="sub1">Subject 1</option>
-                                        <option value="sub2">Subject 2</option>
-                                        <option value="sub3">Subject 3</option>
-                                    </select>
-                                </div>
-                                <div class="query">
-                                    <label for="query">Querry Details :</label>
-                                    <textarea name="query" id="query"></textarea>
+                                <div class="form-right">
+                                    <div class="name">
+                                        <input type="text" name="uname" id="uname">
+                                    </div>
+                                    <div class="email">
+                                        <input type="text" name="email" id="email">
+                                    </div>
+                                    <div class="subjects">
+                                        <select name="subject" id="subject" class="f-subs">
+                                            <option value="sub1">Subject 1</option>
+                                            <option value="sub2">Subject 2</option>
+                                            <option value="sub3">Subject 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="query">
+                                        <textarea name="query" id="query"></textarea>
+                                    </div>
                                 </div>
                                 <div class="buttons">
-                                    <button type="button" onclick="querry()">View Querry</button>
+                                    <button class="card-button" type="button" onclick="querry()">View Querry</button>
                                 </div>
+                                
                             </div>
                         </div>
                         <div class="card-container3" id="form-Output">
-                            <div class="s3-img1 form-card" id="form-Output form-card">
-                                <div class="name">
-                                    Name : <span id="oname"></span>
+                            <div class="s4-img1 form-card" id="form-Output form-card">
+                                <div class="form-left">
+                                    <div class="name">
+                                        Name :
+                                    </div>
+                                    <div class="email">
+                                        E-Mail :
+                                    </div>
+                                    <div class="subjects">
+                                        Subject :
+                                    </div>
+                                    <div class="query">
+                                        Details :
+                                    </div>
                                 </div>
-                                <div class="email">
-                                    E-Mail : <span id="omail"></span>
+                                <div class="form-right">
+                                    <div class="name">
+                                        <span id="oname"></span>
+                                    </div>
+                                    <div class="email">
+                                        <span id="omail"></span>
+                                    </div>
+                                    <div class="subjects">
+                                        <span id="osub"></span>
+                                    </div>
+                                    <div class="query">
+                                        <span id="oquery"></span>
+                                    </div>
                                 </div>
-                                <div class="subjects">
-                                    Subject : <span id="osub"></span>
-                                </div>
-                                <div class="query">
-                                    Details : <span id="oquery"></span>
-                                </div>
-                                <div class="buttons">
-                                    <button type="button" onclick="qEdit()">Edit</button>
-                                    <button type="button" onclick="qSend()">Send</button>
+                                <div class="buttons-container">
+                                    <div class="buttons2">
+                                        <button class="card-button2" type="button" onclick="qEdit()">Edit</button>
+                                    </div>
+                                    <div class="buttons3">
+                                        <button class="card-button2" type="button" onclick="qSend()">Send</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
