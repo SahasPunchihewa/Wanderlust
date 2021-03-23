@@ -53,9 +53,20 @@ section img{
 
 /*secxtion*/
 
-section
+
+.main-description-q
 {
-  padding-top: 30vh;
+    text-align: center;
+    padding-top: 43vh;
+    color: white;
+    transition: 1s;
+}
+.main-sticky-q
+{
+    text-align: center;
+    padding-top: 50vh;
+    color: white;
+    transition: 1s;
 }
 
 section.q-title
