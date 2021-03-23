@@ -55,8 +55,7 @@
 				
 }
 .product-list{
-	background-color:#dfe6e9;
-	top:50%;
+	padding-top: 5%;
 	padding-left: 10%;
 	padding-right: 10%;	
 }
@@ -67,7 +66,7 @@
 	background-color:white;
 	border-radius:10px;
 	padding:1em;
-	box-shadow:5px 10px 5px #b2bec3;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	text-align:center;
 	font-family:"Montserrat";
 	/*width: 200px;*/
@@ -106,7 +105,7 @@
 	
 }
 .buy:hover{
-	box-shadow:5px 5px 5px #b2bec3;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	background-color:#E1441E;
 	color:#fff;
 
@@ -182,7 +181,7 @@
 }
 .order-btn button:hover{
 	background-color:#FB3111;
-	box-shadow:5px 5px 5px #b2bec3;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .image img{
 	cursor:pointer;
@@ -214,4 +213,8 @@ section.sec-prod
     height: 100vh;
     background-image: url("../img/product-bg.png");
     background-size: cover;
+}
+.p-topic
+{
+	padding-bottom: 80px;
 }
