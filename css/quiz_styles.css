@@ -57,3 +57,11 @@ section
 {
   padding-top: 30vh;
 }
+
+section.q-title
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/img_bg/bgimagecw2.png");
+    background-size: cover;
+}
