@@ -7,14 +7,23 @@
         <link rel="stylesheet" href="css/styles.css"/>
     </head>
     <body id="bodyId">
-        <div>
+        <div id="coloursChanger">
+            <label id="selectModeLabel">Select Page Background Colour Here:</label>
             <select id="selectMode" onclick="changeMode()">
-                <option value="light">Light Mode</option>
-                <option value="dark">Dark Mode</option>
+                <option value="white">White</option>
+                <option value="dodgerblue">Dodger Blue</option>
+                <option value="greenyellow">Green Yellow</option>
+                <option value="deeppink">Deep Pink</option>
+                <option value="darkviolet">Dark Violet</option>
             </select>
+            <br/>
+            <label id="selectTextModeLabel">Select Page Text Colour Here:</label>
             <select id="selectTextMode" onclick="changeTextMode()">
-                <option value="lightText">Light Mode Text</option>
-                <option value="darkText">Dark Mode Text</option>
+                <option value="midnightblue">Midnight Blue</option>
+                <option value="silver">Silver</option>
+                <option value="gold">Gold</option>
+                <option value="crimson">Crimson</option>
+                <option value="forestgreen">Forest Green</option>
             </select>
         </div>
         <section class="thumb-img">
@@ -25,7 +34,7 @@
                 <div class="thumb-img-container">
                     <div class="thumb-card-container">
                         <div class="thumb-imgs">
-                            <img src="img/thumbnails/galle.jpg" alt="galle-pic" class="image" id="galle" onClick="imgLarger(this);"/>
+                            <img src="img/thumbnails/galle.jpg" alt="galle-pic" class="image" id="galle" onmouseover="imgLarger(this);"/>
                             <div class="thumb-card-title">
                                 <h3 id="cardTitle1">Galle</h3>
                             </div>
@@ -33,7 +42,7 @@
                     </div>
                     <div class="thumb-card-container">
                         <div class="thumb-imgs">
-                            <img src="img/thumbnails/kandy.jpg" alt="kandy-pic" class="image" id="kandy" onClick="imgLarger(this);"/>
+                            <img src="img/thumbnails/kandy.jpg" alt="kandy-pic" class="image" id="kandy" onmouseover="imgLarger(this);"/>
                             <div class="thumb-card-title">
                                 <h3 id="cardTitle2">Kandy</h3>
                             </div>
@@ -41,7 +50,7 @@
                     </div>
                     <div class="thumb-card-container">
                         <div class="thumb-imgs">
-                            <img src="img/thumbnails/jaffna.jpg" alt="jaffna-pic" class="image" id="jaffna" onClick="imgLarger(this);"/>
+                            <img src="img/thumbnails/jaffna.jpg" alt="jaffna-pic" class="image" id="jaffna" onmouseover="imgLarger(this);"/>
                             <div class="thumb-card-title">
                                 <h3 id="cardTitle3">Jaffna</h3>
                             </div>
@@ -49,7 +58,7 @@
                     </div>
                     <div class="thumb-card-container">
                         <div class="thumb-imgs">
-                            <img src="img/thumbnails/nuwara-eliya.jpg" alt="nuwara-eliya-pic" class="image" id="nuwaraEliya" onClick="imgLarger(this);"/>
+                            <img src="img/thumbnails/nuwara-eliya.jpg" alt="nuwara-eliya-pic" class="image" id="nuwaraEliya" onmouseover="imgLarger(this);"/>
                             <div class="thumb-card-title">
                                 <h3 id="cardTitle4">Nuwara Eliya</h3>
                             </div>
@@ -57,28 +66,19 @@
                     </div>
                     <div class="thumb-card-container">
                         <div class="thumb-imgs">
-                            <img src="img/thumbnails/anuradhapura.jpg" alt="anuradhapura-pic" class="image" id="anuradhapura" onClick="imgLarger(this);"/>
+                            <img src="img/thumbnails/anuradhapura.jpg" alt="anuradhapura-pic" class="image" id="anuradhapura" onmouseover="imgLarger(this);" onmouseout="imgNone(this);"/>
                             <div class="thumb-card-title">
                                 <h3 id="cardTitle5">Anuradhapura</h3>
                             </div>
                         </div>
                     </div>
-                    <div id="myModal" class="modal">
-                        <span class="close">&times;</span>
-                        <img class="modal-content" id="img01">
-                        <div id="caption"></div>
-                    </div>
-                </div>
-                <div id="myModal" class="modal">
-                    <span class="close">&times;</span>
-                    <img class="modal-content" id="img01">
-                    <div id="caption"></div>
                 </div>
             </div>
-            <br/><br/>
+            <br/><br/><br/><br/>
             <div class="imageViewer" align="center">
+                <img id="imgShow" alt="Expanded Image Loads Here" src="#"/>
                 <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                <img id="imgShow" alt="" src="#"/>
+                <br/><br/><br/><br/>
                 <span id="imgDescription"></span>
             </div>
         </section>
@@ -86,41 +86,149 @@
         <script>
             function changeMode() {
                 var valueMode = document.getElementById("selectMode").value;
-                if (valueMode == "light") {
+                if (valueMode == "white") {
                     document.getElementById("bodyId").style.backgroundColor = "white";
+                    document.getElementById("selectMode").style.backgroundColor = "white";
+                    document.getElementById("selectTextMode").style.backgroundColor = "white";
+                }
+                else if (valueMode == "dodgerblue") {
+                    document.getElementById("bodyId").style.backgroundColor = "dodgerblue";
+                    document.getElementById("selectMode").style.backgroundColor = "dodgerblue";
+                    document.getElementById("selectTextMode").style.backgroundColor = "dodgerblue";
+                }
+                else if (valueMode == "greenyellow") {
+                    document.getElementById("bodyId").style.backgroundColor = "greenyellow";
+                    document.getElementById("selectMode").style.backgroundColor = "greenyellow";
+                    document.getElementById("selectTextMode").style.backgroundColor = "greenyellow";
+                }
+                else if (valueMode == "deeppink") {
+                    document.getElementById("bodyId").style.backgroundColor = "deeppink";
+                    document.getElementById("selectMode").style.backgroundColor = "deeppink";
+                    document.getElementById("selectTextMode").style.backgroundColor = "deeppink";
                 }
                 else {
-                    document.getElementById("bodyId").style.backgroundColor = "dodgerblue";
+                    document.getElementById("bodyId").style.backgroundColor = "darkviolet";
+                    document.getElementById("selectMode").style.backgroundColor = "darkviolet";
+                    document.getElementById("selectTextMode").style.backgroundColor = "darkviolet";
                 }
             }
             
             function changeTextMode() {
                 var valueTextMode = document.getElementById("selectTextMode").value;
-                if (valueTextMode == "lightText") {
+                if (valueTextMode == "midnightblue") {
                     document.getElementById("heading").style.color = "midnightblue";
                     document.getElementById("cardTitle1").style.color = "midnightblue";
                     document.getElementById("cardTitle2").style.color = "midnightblue";
                     document.getElementById("cardTitle3").style.color = "midnightblue";
                     document.getElementById("cardTitle4").style.color = "midnightblue";
                     document.getElementById("cardTitle5").style.color = "midnightblue";
+                    document.getElementById("selectModeLabel").style.color = "midnightblue";
+                    document.getElementById("selectTextModeLabel").style.color = "midnightblue";
+                    document.getElementById("imgDescription").style.color = "midnightblue";
+                }
+                else if (valueTextMode == "silver") {
+                    document.getElementById("heading").style.color = "silver";
+                    document.getElementById("cardTitle1").style.color = "silver";
+                    document.getElementById("cardTitle2").style.color = "silver";
+                    document.getElementById("cardTitle3").style.color = "silver";
+                    document.getElementById("cardTitle4").style.color = "silver";
+                    document.getElementById("cardTitle5").style.color = "silver";
+                    document.getElementById("selectModeLabel").style.color = "silver";
+                    document.getElementById("selectTextModeLabel").style.color = "silver";
+                    document.getElementById("imgDescription").style.color = "silver";
+                }
+                else if (valueTextMode == "gold") {
+                    document.getElementById("heading").style.color = "gold";
+                    document.getElementById("cardTitle1").style.color = "gold";
+                    document.getElementById("cardTitle2").style.color = "gold";
+                    document.getElementById("cardTitle3").style.color = "gold";
+                    document.getElementById("cardTitle4").style.color = "gold";
+                    document.getElementById("cardTitle5").style.color = "gold";
+                    document.getElementById("selectModeLabel").style.color = "gold";
+                    document.getElementById("selectTextModeLabel").style.color = "gold";
+                    document.getElementById("imgDescription").style.color = "gold";
+                }
+                else if (valueTextMode == "crimson") {
+                    document.getElementById("heading").style.color = "crimson";
+                    document.getElementById("cardTitle1").style.color = "crimson";
+                    document.getElementById("cardTitle2").style.color = "crimson";
+                    document.getElementById("cardTitle3").style.color = "crimson";
+                    document.getElementById("cardTitle4").style.color = "crimson";
+                    document.getElementById("cardTitle5").style.color = "crimson";
+                    document.getElementById("selectModeLabel").style.color = "crimson";
+                    document.getElementById("selectTextModeLabel").style.color = "crimson";
+                    document.getElementById("imgDescription").style.color = "crimson";
                 }
                 else {
-                    document.getElementById("heading").style.color = "white";
-                    document.getElementById("cardTitle1").style.color = "white";
-                    document.getElementById("cardTitle2").style.color = "white";
-                    document.getElementById("cardTitle3").style.color = "white";
-                    document.getElementById("cardTitle4").style.color = "white";
-                    document.getElementById("cardTitle5").style.color = "white";
+                    document.getElementById("heading").style.color = "forestgreen";
+                    document.getElementById("cardTitle1").style.color = "forestgreen";
+                    document.getElementById("cardTitle2").style.color = "forestgreen";
+                    document.getElementById("cardTitle3").style.color = "forestgreen";
+                    document.getElementById("cardTitle4").style.color = "forestgreen";
+                    document.getElementById("cardTitle5").style.color = "forestgreen";
+                    document.getElementById("selectModeLabel").style.color = "forestgreen";
+                    document.getElementById("selectTextModeLabel").style.color = "forestgreen";
+                    document.getElementById("imgDescription").style.color = "forestgreen";
                 }
             }
             
+            
+            function imgLarger(imgs) {
+                var extendImg = document.getElementById("imgShow");
+                /*extendImg.style.visibility = "visible"*/
+                extendImg.src = imgs.src;
+                var description = document.getElementById("imgDescription");
+                /*description.textContent = "I came, I saw, I conquered";*/
+            }
+                
+                /*var des1 = "Galle is a beautiful city.";
+                var des2 = "Kandy is a beautiful city.";
+                var des3 = "Jaffna is a beautiful city.";
+                var des4 = "Nuwara Eliya is a beautiful city.";
+                var des5 = "Anuradhapura is a beautiful city.";
+                
+                var des = [];
+                des[0] = des1;
+                des[1] = des2;
+                des[2] = des3;
+                des[3] = des4;
+                des[4] = des5;
+                
+                var ids = [];
+                ids[0] = document.getElementById("galle");
+                ids[1] = document.getElementById("kandy");
+                ids[2] = document.getElementById("jaffna");
+                ids[3] = document.getElementById("nuwaraEliya");
+                ids[4] = document.getElementById("anuradhapura");
+                
+                if (ids[0] == "galle") {
+                    description.textContent = des[0];
+                }
+                if (ids[1] == "kandy") {
+                    description.textContent = des[1];
+                }
+                if (ids[2] == "jaffna") {
+                    description.textContent = des[2];
+                }
+                if (ids[3] == "nuwaraEliya") {
+                    description.textContent = des[3];
+                }
+                if (ids[4] == "anuradhapura") {
+                    description.textContent = des[4];
+                }*/
+            
+            /*function imgNone(imgs) {
+                var extendImg = document.getElementById("imgShow");
+                extendImg.style.visibility = "hidden"
+                extendImg.src = imgs.src;
+            }*/
             
             /*function imgLarger(imgs) {
                 var extendImg = document.getElementById("imgShow");
                 var description = document.getElementById("imgDescription");
                 extendImg.src = imgs.src;
                 
-                var des1 = "Galle is a beautiful city.";
+                /*var des1 = "Galle is a beautiful city.";
                 var des2 = "Kandy is a beautiful city.";
                 var des3 = "Jaffna is a beautiful city.";
                 var des4 = "Nuwara Eliya is a beautiful city.";
@@ -157,26 +265,6 @@
                     description.innerHTML = des[i];
                     }
                 }
-            }*/
-            
-            /*var modal = document.getElementById("myModal");
-
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg");
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
-            img.onclick = function(){
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                captionText.innerHTML = this.alt;
-            }
-
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() { 
-                modal.style.display = "none";
             }*/
         </script>
     </body>

@@ -6,17 +6,14 @@
     display: flex;
     flex-direction: column;
     background-color: white
-    /*background-image: url("../img/thumbnails/wallpaper.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat*/
 }
 .thumb-img {
-    padding-top: 0.5%;
+    padding-top: 0;
     transition: 1s;
     width: 100%
 }
 .thumb-img-container {
-    padding-top: 1%;
+    padding-top: 0;
     display: flex;
 }
 .thumb-img-container h3 {
@@ -53,11 +50,32 @@
     font-size: 50px;
     font-weight: bold;
     color: midnightblue;
-    padding-top: 4%
+    padding-top: 0
 }
 #imgShow {
     width: 50%
 }
 .imageViewer {
-    position:sticky
+    padding-bottom: 10%
+}
+#coloursChanger {
+    display: block;
+    padding: 1%
+}
+#coloursChanger select {
+    display: block;
+    position: relative;
+    background-color: white;
+}
+#coloursChanger #selectModeLabel, #selectTextModeLabel, select, option {
+    color: midnightblue
+}
+#imgDescription {
+    color: midnightblue
+}
+.closebtn{
+    cursor: pointer
+}
+#anuradhapuratext {
+    display: none
 }
