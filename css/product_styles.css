@@ -92,7 +92,7 @@
 .buy{
 	margin-left:65px;
 	margin-top:30px;
-	background-color:#f9ca24;
+	background-color: dodgerblue;
 	border:none;
 	padding:1em;
 	border-radius:5px;
@@ -101,14 +101,13 @@
 	cursor:pointer;
 	width:50%;
 	transition:0.6s ease;
-	color:#404040;
+	color:white;
+	transition: .5s;
 	
 }
 .buy:hover{
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	background-color:#E1441E;
-	color:#fff;
-
+	background-color:darkblue;
+	transition: .5s;
 }
 .product-container{
 	display:grid;
@@ -146,12 +145,12 @@
 }
 .product-price:first-of-type{
     text-decoration: line-through;
-    color: #79CD5C;
+    color: #5c80cd;
 }
 .text{
 	margin-top:10px;
 	padding:10px;
-	background-color:#F0FAED;
+	background-color:#edf4fa;
 	margin:10px;
 	width:78%;
 }
