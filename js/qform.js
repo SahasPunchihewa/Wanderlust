@@ -53,6 +53,10 @@ function querry()
         document.getElementById("omail").innerHTML = eMail;
         document.getElementById("osub").innerHTML = Subject;
         document.getElementById("oquery").innerHTML = Query;
+        document.qform.uname.value="";
+        document.qform.email.value="";
+        document.qform.subject.value="";
+        document.qform.query.value="";
     }
 }
 
@@ -67,6 +71,16 @@ function qEdit()
     {
         outDiv.style.display = "none";
     }
+    var uname=document.getElementById("oname").innerHTML;
+    var email=document.getElementById("omail").innerHTML;
+    var sub=document.getElementById("osub").innerHTML;
+    var detail=document.getElementById("oquery").innerHTML;
+
+    document.qform.uname.value=uname;
+    document.qform.email.value=email;
+    document.qform.subject.value=sub;
+    document.qform.query.value=detail;
+
     document.getElementById("oname").innerHTML = "";
     document.getElementById("omail").innerHTML = "";
     document.getElementById("osub").innerHTML = "";
