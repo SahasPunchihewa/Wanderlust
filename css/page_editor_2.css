@@ -10,19 +10,30 @@ section.sec-main
     justify-content: center;
     display: flex;
     flex-direction: row;
-    padding-top: 20vh;
-    /*padding-left: 35vw;*/
-    padding-right: 100px;
     color: #414141;
     transition: 1s;
 }
 .main-sticky-p
 {
-    padding-top: 35vh;
-    /*padding-left: 35vw;*/
-    padding-right: 100px;
+    padding-top: 7.5vh;
     color: #414141;
     transition: 1s;
+}
+.main-title
+{
+    padding-top: 10vh;
+}
+.main-title p
+{
+    text-align: center;
+    color: #414141;
+    font-size: 50px;
+}
+.s3-img-container-p
+{
+    display: flex;
+    padding-bottom: 20px;
+    width: 100%;
 }
 
 
