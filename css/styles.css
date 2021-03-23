@@ -414,6 +414,10 @@ section.sec1
     transition: .5s;
     
 }
+.q-head
+{
+    padding: 50px;
+}
 /*Footer*/
 
 .footer
