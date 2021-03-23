@@ -1,8 +1,8 @@
 document.getElementById("groupId1").addEventListener("click", function() {
-    document.location.href="presentation.html";
+    document.location.href="index.html";
 });
 document.getElementById("groupId3").addEventListener("click", function() {
-    document.location.href="index.html";
+    document.location.href="main.html";
 });
 document.getElementById("groupId9").addEventListener("click", function() {
     document.location.href="product_page.html";

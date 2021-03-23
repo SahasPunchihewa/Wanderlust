@@ -63,15 +63,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="imageViewer">
-                    <!--<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>-->
-                    <img id="imgShow" alt="Expanded Thumbnail" src="#"/>
-                    <span id="imgDescription"></span>
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
                 </div>
             </div>
+            <!--<br/><br/>
+            <div class="imageViewer" align="center">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <img id="imgShow" alt="" src="#"/>
+                <span id="imgDescription"></span>
+            </div>-->
         </section>
         <script>
-            function imgLarger(imgs) {
+            /*function imgLarger(imgs) {
                 var extendImg = document.getElementById("imgShow");
                 var description = document.getElementById("imgDescription");
                 extendImg.src = imgs.src;
@@ -82,7 +88,7 @@
                 var des4 = "Nuwara Eliya is a beautiful city.";
                 var des5 = "Anuradhapura is a beautiful city.";
                 
-                /*var des = [];
+                var des = [];
                 des[0] = des1;
                 des[1] = des2;
                 des[2] = des3;
@@ -112,7 +118,27 @@
                     else if (ids[i] == "anuradhapura"){
                     description.innerHTML = des[i];
                     }
-                }*/
+                }
+            }*/
+            
+            var modal = document.getElementById("myModal");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+                modal.style.display = "none";
             }
         </script>
     </body>
