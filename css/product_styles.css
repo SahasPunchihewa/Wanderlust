@@ -35,6 +35,11 @@
 .bottom{
 	background-color:red;
 }
+.content .underline{
+	position:absolute;
+	top:15%;
+	left:25%;
+}
 .content form{
 	top:5%;
 	color:#fff;
