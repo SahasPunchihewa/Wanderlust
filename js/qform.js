@@ -1,6 +1,6 @@
 function querry()
 {
-    console.log("dsakfjaslkdja;kl");
+    
     var uName=document.qform.uname.value;
     var eMail=document.qform.email.value;
     var Subject=document.qform.subject.value;
@@ -8,6 +8,7 @@ function querry()
 
     var status=1;
     var outDiv = document.getElementById("form-Output");
+    outDiv.style.display="none";
 
     if(uName=="")
     {
@@ -38,6 +39,8 @@ function querry()
     }
     if(status==1)
     {   
+        console.log(outDiv.style.display);
+        
         if (outDiv.style.display =="none")
         {
             outDiv.style.display = "block";
@@ -72,6 +75,12 @@ function qEdit()
 
 function qSend()
 {
+    var uName=document.qform.uname.value;
+    var eMail=document.qform.email.value;
+    var Subject=document.qform.subject.value;
+    var Query=document.qform.query.value;
+    window.open(eMail);
+
     var outDiv = document.getElementById("form-Output");
     if (outDiv.style.display =="none")
     {

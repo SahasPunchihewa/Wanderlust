@@ -310,6 +310,14 @@ section.sec1
 {
     width: 100%;
 }
+.card-container3
+{
+    width: 100%;
+}
+#form-Output
+{
+    display: none;
+}
 /*Footer*/
 
 .footer
