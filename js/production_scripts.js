@@ -29,11 +29,13 @@ function validateForm(){
 		return false;
 	}
 	if(isNaN(mobileNumber) || mobileNumber.length != 10){
-		window.alert("Please enter a valid Mobile number")
+		window.alert("Please enter a valid Mobile number");
+		document.getElementById("mobi").value = "";
 		false;	
 	}
 	if(email.indexOf("@")== -1 || email.length < 6){
 		window.alert("Please enter a Valid Email address");
+		document.getElementById("email").value = "";
 		return false;
 	}
 	
@@ -45,7 +47,12 @@ function validateForm(){
 		totalPrice += priceArray[i];
 	}
 	
-	window.alert("Customer  First name : "+document.getElementById('fname').value + "\nCustomer  Last name : "+document.getElementById('lname').value + "\nCustomer Email Address : "+document.getElementById('email').value +  "\nYour Invoice Details : \n" + "\n---------------------\n" + alertMessage.join("\n") + "\nYour total Bill is Rs." + totalPrice + "\nThank you for shopping with us.Come Again!!")
+	window.alert("Customer  First name : "+document.getElementById('fname').value + "\nCustomer  Last name : "+document.getElementById('lname').value + "\nCustomer Email Address : "+document.getElementById('email').value +  "\nYour Invoice Details : \n" + "\n---------------------\n" + alertMessage.join("\n") + "\nYour total Bill is Rs." + totalPrice + "\nThank you for shopping with us.Come Again!!");
+	
+	document.getElementById("fname").value = "";
+	document.getElementById("lname").value = "";
+	document.getElementById("email").value = "";
+	document.getElementById("mobi").value = "";
 }
 
 function addProduct1(){
