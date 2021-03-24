@@ -7,7 +7,6 @@
 		<link rel="stylesheet" href="css/styles.css"></link>
 	</head>
 	<body>
-<<<<<<< Updated upstream
 		<nav class="nav-header" id="header">
             <a href="index.html">
                 <div class="h-logo">
@@ -25,43 +24,6 @@
 				<li><a href="student_details.html">Student Details</a></li>
             </ul>
         </nav>
-=======
-	  <h2 class="quizHead">QUIZ</h2>
-	  <div class="image">
-	  <img src="img/img_bg/img3.png" alt="img"/>
-	  </div>
-		<form id="quiz_tour" name="quiz_tour">
-	  	<table width="900px">
-		<tr>
-		<td>
-		
-			<div>
-			<p class="question">Q1</p>
-			<p>The ancient fortress known as Sigiriya Rock was built by King Kashyapa I to shield himself from potential attacks from his brother Moggallana, the rightful heir to the throne. 
-			This masterpiece has made many wonder about the technology at the time. Guess the number of steps to get to the top of the fortress?</p> 
-			<ul>
-			<input class="answer" type="radio" name="q1" value="w">
-	        <label> 884 steps</label>
-	    	<br>
-	        <input class="answer" type="radio" name="q1" value="w">
-	        <label>1,021 steps</label>
-	        <br>
-	        <input class="answer" type="radio" name="q1" value="w">
-	        <label> 981 steps</label>
-	        <br>
-	        <input class="answer" type="radio" name="q1" value="r">
-	        <label id="correctString1">1,236 steps</label>
-    		</ul>
-	  	</div>
-	  </td>
-	  </tr>
-	  <tr>
-	  <td>
-	  	<div>
-	  		<p class="question">Q2</p>
-			<p>Yuri Gagarin, Hero of the Soviet Union, the first man in space received many invitations 
-			from countries around the world to visit them. Which Heritage Hotel did he stay in, when he visited Sri Lanka on December 7 1961?</p>
->>>>>>> Stashed changes
 
 		<section class="q-title">
             <div class="main-description-q" id="main-title">
@@ -391,242 +353,114 @@
             </div>
         </div>
 
-<<<<<<< Updated upstream
 	 
-=======
-	    	<ul>
-	        <input class="answer" type="radio" name="q9" value="w">
-	        <label>Vesak</label>
-	        <br>
-	        <input class="answer" type="radio" name="q9" value="w">
-	        <label>Sinhala and Tamil New Year</label>
-	        <br>
-	        <input class="answer" type="radio" name="q9" value="r">
-	        <label id="correctString9">Kandy Esala Perahara</label>
-	        <br>
-	        <input class="answer" type="radio" name="q9" value="w">
-	        <label> Thaipongal</label>
-    		</ul>
-	  	</div>
-	  </td>
-	</tr>
-	<tr>
-	  <td>
-	  	<div>
-	  		<p class="question">Q10</p>
-			<p>On March 2, 1815 the Kingdom of Kandy was ceded to the British where the last king of Sri Lanka was deposed and taken as a royal prisoner by the British to Vellore Fort in Southern India. 
-			Who was the last King to reign over Sri Lanka?</p> 
-
-	    	<ul>
-	        <input class="answer" type="radio" name="q10" value="w">
-	        <label>King Dutugemunu</label>
-	        <br>
-	        <input class="answer" type="radio" name="q10" value="w">
-	        <label>King Kashyapa</label>
-	        <br>
-	        <input class="answer" type="radio" name="q10" value="r">
-	        <label id="correctString10">King Sri Wickrama Rajasinha</label>
-	        <br>
-	        <input class="answer" type="radio" name="q10" value="w">
-	        <label>King Parakramabahu the Great
-
-</label>
-    		</ul>
-	  	</div>
-	  </td>
-	</tr>
-	</table>
-
-<br>
-
-
-
 	
-	<div class="submitter">
-	<button id="submit-btn" type="button" onclick= "displayRadioValue()">
-		Submit 
-	</button> 
-	</div>
-		
-</form>	  
-		
-		
->>>>>>> Stashed changes
-	
-	<div class="container">
-      <div id="quiz-time-left">
-     </div>
-	  <div id="col">
-	  </div>
-   </div>
 
 	
     <script>
-	
-		
-
-		
-		//question_area
-		var question1=document.forms["quiz_tour"]["q1"];
-		var question2=document.forms["quiz_tour"]["q2"];
-		var question3=document.forms["quiz_tour"]["q3"];
-		var question4=document.forms["quiz_tour"]["q4"];
-		var question5=document.forms["quiz_tour"]["q5"];
-		var question6=document.forms["quiz_tour"]["q6"];
-		var question7=document.forms["quiz_tour"]["q7"];
-		var question8=document.forms["quiz_tour"]["q8"];
-		var question9=document.forms["quiz_tour"]["q9"];
-		var question10=document.forms["quiz_tour"]["q10"];
-		//variable to keep track of the points
-		var correct=0;
-		var total = 10;
-		//Array for the questions
-		var questions = [question1, question2, question3, question4, question5, question6, question7, question8, question9, question10];
-		
-		
-		
-		//checking answer 
+		var c=60;
 		function displayRadioValue(){
 		
 		
-			if (question1.value=="r"){
+		
+		var question1=document.forms["quiz_tour"]["q1"].value;
+		var question2=document.forms["quiz_tour"]["q2"].value;
+		var question3=document.forms["quiz_tour"]["q3"].value;
+		var question4=document.forms["quiz_tour"]["q4"].value;
+		var question5=document.forms["quiz_tour"]["q5"].value;
+		var question6=document.forms["quiz_tour"]["q6"].value;
+		var question7=document.forms["quiz_tour"]["q7"].value;
+		var question8=document.forms["quiz_tour"]["q8"].value;
+		var question9=document.forms["quiz_tour"]["q9"].value;
+		var question10=document.forms["quiz_tour"]["q10"].value;
+		var correct=0;
+		
+
+		
+			if (question1=="r"){
 				correct+=2;
 			}
 			else{
 				correct--;
 			}
-			if (question2.value=="r"){
+			if (question2=="r"){
 				correct+=2;
 			}
 			else{
 				correct--;
 			}
-			if (question3.value=="r"){
+			if (question3=="r"){
 				correct+=2;
 			}
 			else{
 				correct--;
 			}
-			if (question4.value=="r"){
+			if (question4=="r"){
 				correct+=2;
 			}
 			else{
 				correct--;
 			}
-			if (question5.value=="r"){
+			if (question5=="r"){
 				correct+=2;
 			}
 			else{
 				correct--;
 			}
-			if (question6.value=="r"){
+			if (question6=="r"){
 				correct+=2;	
 			}
 			else{
 				correct--;
 			}
-			if (question7.value=="r"){
+			if (question7=="r"){
 				correct+=2;
 			}
 			else{
 				correct--;
 			}
-			if (question8.value=="r"){
+			if (question8=="r"){
 				correct+=2;
 			}
 			else{
 				correct--;
 			}
-			if (question9.value=="r"){
+			if (question9=="r"){
 				correct+=2;
 			}
 			else{
 				correct--;
 			}
-			if (question10.value=="r"){
+			if (question10=="r"){
 				correct+=2;
 			}
 			else{
 				correct--;
 			}
+		    
+		    
+			document.getElementById("submit_button").style.visibility="visible";
+			document.getElementById("number_correct").innerHTML= "Your mark is " + correct ;
 		
-			
-			
-			
-			// stop timer
-			clearInterval(timer);
-			
-			// disable form
-			var elements = document.getElementById("quiz_tour").elements;
-			for (var i = 0, len = elements.length; i < len; ++i) {
-			elements[i].disabled = true;
-			
-			}
-			
-		//CSS for questions
-		var q = document.getElementById("col");
-		if (correct>=15){
-		  document.querySelector("body").style.background= "#cbf1f5"
-		}else if (correct>=10) {
-		  document.querySelector("body").style.background= "#f5c0c0"
-		}else if (correct>=5){
-		  document.querySelector("body").style.background= "#94ebcd"
-		}else{
-		  document.querySelector("body").style.background= "#c5d7bd"
-		}
-
-
-        q.innerHTML = "You got " + correct + " Marks" +
-        "<br />" + "You used " + (59 - Math.floor(total_seconds)) + " seconds";
-
-        return false;
-
-		
-			
+		window.clearInterval(update);
+        c = "-";
 		}
 		
-	
 		
-		//Timer
-		var total_seconds = 60 * 1;
-        var c_minutes = parseInt(total_seconds / 60);
-        var c_seconds = parseInt(total_seconds % 60);
-        var timer;
-		
-		function CheckTime() {
-		document.getElementById("quiz-time-left").innerHTML = 'Time Left: ' + c_minutes + ' minutes ' + c_seconds + ' seconds ';
-
-		  if (total_seconds <= 0) {
-			score();
-		  } else {
-			total_seconds = total_seconds - 1;
-			c_minutes = parseInt(total_seconds / 60);
-			c_seconds = parseInt(total_seconds % 60);
-			timer = setTimeout(CheckTime, 1000);
-		  }
+		function timer01(){
+			c=c-1;
+			if(c<60){
+				timer.innerHTML=c;
+				}
+			if(c<1){
+			window.clearInterval(update);
+				msg1.innerHTML = "Time's up";
+                msg2.innerHTML = "";
+                msg3.innerHTML = "";	
+               
+			}
 		}
-		timer = setTimeout(CheckTime, 1000);
-
-
-		
-	
-        
-
-	
-	
-	
-		
-	
-	
-    
-		
-		
-		
-		
-
-			 
-		
-
+		update=setInterval("timer01()",1000);
 		
 	
 		
