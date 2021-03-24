@@ -71,12 +71,3 @@ section.sec-main
     box-sizing: border-box;
     transition: 1s;
 }
-.card-container-pe
-{
-    width: 100%;
-    padding: 0 10px;
-    float: left;
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-}
