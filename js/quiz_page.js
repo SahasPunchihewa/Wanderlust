@@ -98,13 +98,13 @@
 		//CSS for questions
 		var q = document.getElementById("col");
 		if (correct>=15){
-		  document.querySelector("body").style.background= "#cbf1f5"
+		  document.querySelector("form").style.background= "#cbf1f5"
 		}else if (correct>=10) {
-		  document.querySelector("body").style.background= "#f5c0c0"
+		  document.querySelector("form").style.background= "#f5c0c0"
 		}else if (correct>=5){
-		  document.querySelector("body").style.background= "#94ebcd"
+		  document.querySelector("form").style.background= "#94ebcd"
 		}else{
-		  document.querySelector("body").style.background= "#c5d7bd"
+		  document.querySelector("form").style.background= "#c5d7bd"
 		}
 
 
