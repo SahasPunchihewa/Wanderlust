@@ -34,6 +34,8 @@ section.sec-main
     display: flex;
     padding-bottom: 20px;
     width: 100%;
+    flex-direction: row;
+    margin: auto;
 }
 
 
@@ -68,4 +70,13 @@ section.sec-main
     padding-bottom: 10px;
     box-sizing: border-box;
     transition: 1s;
+}
+.card-container-pe
+{
+    width: 60%;
+    padding: 0 10px;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
 }
