@@ -22,21 +22,21 @@
 }
 .content h1{
 	font-size:78px;
-	font-family:"Montserrat";
+	font-family:Bahnschrift;
 }
 .content p{
 	font-size:35px;
 	margin:20px auto;
 	font-weight:100;
 	line-height:25px;
-	font-family:"Montserrat";
+	font-family:Bahnschrift;
 }
 
 .logo{
 	padding:15px;
 }
 .title{
-	font-family:"Montserrat";
+	font-family:Bahnschrift SemiBold ;
 	font-weight:bold;
 	color:#fff;
 	font-size:45px;

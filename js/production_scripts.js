@@ -53,7 +53,7 @@ function validateForm(){
 	document.getElementById("lname").value = "";
 	document.getElementById("email").value = "";
 	document.getElementById("mobi").value = "";
-}
+}	
 
 function addProduct1(){
 	productPrice1 = document.getElementById('product1').value*3500;
