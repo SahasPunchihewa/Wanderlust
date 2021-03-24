@@ -162,15 +162,14 @@
         </section>
 
         <section class="sec" id="query-form">
+            <div class="q-head">
+                <h1>Query Form</h1>
+                <p>Details About Query Form</p>
+            </div>
             <div class="s-q-container">
                 <form name="qform">
-                    <div class="q-head">
-                        <h1>Query Form</h1>
-                        <p>Details About Query Form</p>
-                    </div>
-                    <div class="s3-img-container">
-                        <div class="card-container2">
-                            <div class="s4-img1 form-card" id="form-card">
+                        <div class="s4-img1 form-card" id="form-card">
+                            <div class="form-only">
                                 <div class="form-left">
                                     <div class="name">
                                         <label for="uname">Uname :</label>
@@ -198,58 +197,60 @@
                                             <option value="sub2">Subject 2</option>
                                             <option value="sub3">Subject 3</option>
                                         </select>
-                                    </div>
+                                     </div>
                                     <div class="query">
-                                        <textarea name="query" id="query"></textarea>
+                                        <textarea name="query" id="query" rows="5"></textarea>
                                     </div>
                                 </div>
-                                <div class="buttons">
-                                    <button class="card-button" type="button" onclick="querry()">View Querry</button>
+                            </div>
+                            <div class="buttons">
+                                <button class="card-button" type="button" onclick="querry()">View&nbsp;Querry</button>
+                            </div>
+    
+                        </div>
+                        <div class="s4-img1" id="form-Output">
+                            <div class="form-card" id="form-Output form-card">
+                                <div class="form-only">
+                                    <div class="form-left">
+                                        <div class="name">
+                                            Name :
+                                        </div>
+                                        <div class="email">
+                                            E-Mail :
+                                        </div>
+                                        <div class="subjects">
+                                            Subject :
+                                        </div>
+                                        <div class="query">
+                                            Details :
+                                        </div>
+                                    </div>
+                                    <div class="form-right">
+                                        <div class="name">
+                                            <span id="oname"></span>
+                                        </div>
+                                        <div class="email">
+                                            <span id="omail"></span>
+                                        </div>
+                                        <div class="subjects">
+                                            <span id="osub"></span>
+                                        </div>
+                                        <div class="query">
+                                            <span id="oquery"></span>
+                                        </div>
+                                    </div>
                                 </div>
                                 
-                            </div>
-                        </div>
-                        <div class="card-container3" id="form-Output">
-                            <div class="s4-img1 form-card" id="form-Output form-card">
-                                <div class="form-left">
-                                    <div class="name">
-                                        Name :
-                                    </div>
-                                    <div class="email">
-                                        E-Mail :
-                                    </div>
-                                    <div class="subjects">
-                                        Subject :
-                                    </div>
-                                    <div class="query">
-                                        Details :
-                                    </div>
-                                </div>
-                                <div class="form-right">
-                                    <div class="name">
-                                        <span id="oname"></span>
-                                    </div>
-                                    <div class="email">
-                                        <span id="omail"></span>
-                                    </div>
-                                    <div class="subjects">
-                                        <span id="osub"></span>
-                                    </div>
-                                    <div class="query">
-                                        <span id="oquery"></span>
-                                    </div>
-                                </div>
-                                <div class="buttons-container">
+                                <div class="buttons">
                                     <div class="buttons2">
                                         <button class="card-button2" type="button" onclick="qEdit()">Edit</button>
                                     </div>
-                                    <div class="buttons3">
+                                    <div class="buttons2">
                                         <button class="card-button2" type="button" onclick="qSend()">Send</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                 </form>
             </div>
         </section>
