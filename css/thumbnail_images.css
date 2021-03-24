@@ -53,10 +53,21 @@
     padding-top: 0
 }
 #imgShow {
-    width: 50%
+    width: 50%;
+    border-radius: 10px;
+    padding: 5%;
+    color: midnightblue;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
+}
+#imgShow:hover {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    transition: 2s;
+    object-fit: none
 }
 .imageViewer {
-    padding-bottom: 10%
+    padding-bottom: 5%;
+    display: block;
+    text-align: center
 }
 #coloursChanger {
     display: block;
@@ -65,13 +76,21 @@
 #coloursChanger select {
     display: block;
     position: relative;
-    background-color: white;
+    background-color: white
 }
 #coloursChanger #selectModeLabel, #selectTextModeLabel, select, option {
     color: midnightblue
 }
 #imgDescription {
-    color: midnightblue
+    color: midnightblue;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
+}
+#imgDescription:hover {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    transition: 2s;
+    object-fit: none
 }
 .closebtn{
     cursor: pointer
