@@ -17,10 +17,10 @@
 		
 		
 		
-		//checking answer 
+		
 		function displayRadioValue(){
 		
-		
+		//checking answer 
 			if (question1.value=="r"){
 				correct+=2;
 			}
