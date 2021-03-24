@@ -31,7 +31,6 @@ body
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-	background-color:#FFF8DC;
 	background-size:280%;
 }
 
@@ -76,13 +75,7 @@ section.q-title
     background-image: url("../img/img_bg/bgimagecw2.png");
     background-size: cover;
 }
-.sec-container
-{
-  padding: 50px;
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-}
+
 .container
 {
  display:grid;
@@ -94,7 +87,7 @@ section.q-title
  padding: 10px;
  opacity: 0.9;
  position: absolute;
- top: 1000px;
+ top: 825px;
  right:30px;
  box-shadow: 5px 5px 5px 5px #888888;
 }
@@ -141,7 +134,3 @@ section.q-title
 	
 }
 
-.image
-{
-  width: 900px;
-}
