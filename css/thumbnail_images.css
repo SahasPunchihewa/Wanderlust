@@ -103,12 +103,10 @@
 
 /*from main*/
 
-.content
-{
+.content{
     padding-top: 20vh;
 }
-.nav-header-ti
-{
+.nav-header-ti{
     position: fixed;
     top:0;
     left:0;
@@ -121,8 +119,7 @@
     transition: 1s;
     z-index: 1;
 }
-.sticky-ti
-{
+.sticky-ti{
     background-color: white;
     position: fixed;
     top:0;
@@ -137,15 +134,12 @@
     transition: 1s;
     z-index: 1;
 }
-
-.content
-{
+.content{
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 10%;
 }
-.sec1-thumb
-{
+.sec1-thumb{
     width: 100%;
     height: 100vh;
     background-image: url("../img/thumb-bg.png");
