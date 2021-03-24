@@ -444,7 +444,7 @@ section.sec1
 .f-description
 {
     padding-left: 100px;
-    padding-right: 100px;
+    padding-right: 50px;
     padding-top: 20px;
     float: left;
     display: flex;
@@ -460,8 +460,8 @@ section.sec1
 }
 .f-nav
 {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-top: 20px;
 }
 .f-nav a
@@ -477,7 +477,7 @@ section.sec1
 
 .f-contact
 {
-    padding-left: 100px;
+    padding-left: 50px;
     padding-right: 100px;
     padding-top: 20px;
 }
