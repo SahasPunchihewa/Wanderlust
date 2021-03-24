@@ -354,7 +354,9 @@ section.sec1
 }
 .card-container2
 {
-    width: 100%;
+    width: 25%;
+    padding: 0 10px;
+    float: left;
 }
 .card-container3
 {
