@@ -1,3 +1,4 @@
+/*change background colour*/
 function changeMode() {
     var valueMode = document.getElementById("selectMode").value;
     if (valueMode == "white") {
@@ -26,7 +27,8 @@ function changeMode() {
         document.getElementById("selectTextMode").style.backgroundColor = "darkviolet";
     }
 }
-            
+
+/*change background text colour*/
 function changeTextMode() {
     var valueTextMode = document.getElementById("selectTextMode").value;
     if (valueTextMode == "midnightblue") {
@@ -176,7 +178,7 @@ function changeTextMode() {
     }
 }
             
-            
+/*expanded image and description*/            
 function imgLarger(imgs) {
     var extendImg = document.getElementById("imgShow");
     extendImg.src = imgs.src;
