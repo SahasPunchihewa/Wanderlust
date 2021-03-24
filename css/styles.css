@@ -320,8 +320,13 @@ section.sec1
 }
 .s3-card-title
 {
-    padding: 2px 16px;
+    padding: 10px;
     transition: 1s;
+    text-align: center;
+}
+.s3-card-title ul li
+{
+    text-align: left;
 }
 .s3-img2
 {
