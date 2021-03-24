@@ -1,3 +1,4 @@
+/*links*/
 document.getElementById("groupId1").addEventListener("click", function() {
     document.location.href="index.html";
 });

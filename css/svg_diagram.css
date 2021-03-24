@@ -16,7 +16,8 @@ body {
     margin-top: 9%;
     width: 50%;
     margin-left: 25%;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6), 0 6px 10px 0 rgba(0, 0, 0, 0.3)
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6), 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer
 }
 .container:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
@@ -55,9 +56,7 @@ text {
     fill: white;
     font-size: 16px;
 }
-
-.svg-cont
-{
-    padding-top: 30vh;
-    padding-top: 20vh;
+.svg-cont{
+    padding-top: 10vh;
+    padding-bottom: 20vh;
 }

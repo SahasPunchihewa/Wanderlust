@@ -52,6 +52,7 @@
     color: midnightblue;
     padding-top: 0
 }
+/*expanded image*/
 #imgShow {
     width: 50%;
     border-radius: 10px;
@@ -69,6 +70,7 @@
     display: block;
     text-align: center
 }
+/*select menus*/
 #coloursChanger {
     display: block;
     padding-bottom: 1%;
@@ -83,6 +85,7 @@
 #coloursChanger #selectModeLabel, #selectTextModeLabel, select, option {
     color: midnightblue
 }
+/*description*/
 #imgDescription {
     color: midnightblue;
     border-radius: 10px;
@@ -98,7 +101,7 @@
     cursor: pointer
 }
 
-/*sahas*/
+/*from main*/
 
 .content
 {

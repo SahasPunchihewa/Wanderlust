@@ -10,7 +10,7 @@ function myFunction()
 {
     if(window.pageYOffset>sticky)
     {
-        header.classList.add("sticky");
+        header.classList.add("sticky-p");
         title.classList.add("st-title");
         anchor.classList.add("st-anc");
         //mainTitle.classList.add("main-sticky");
@@ -18,7 +18,7 @@ function myFunction()
     }
     else
     {
-        header.classList.remove("sticky");
+        header.classList.remove("sticky-p");
         title.classList.remove("st-title");
         anchor.classList.remove("st-anc");
         //mainTitle.classList.remove("main-sticky");

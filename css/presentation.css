@@ -1,7 +1,7 @@
 *{
 	margin:0;
 	padding:0;
-	font-family:Bahnschrift SemiBold ;
+	font-family:"Montserrat";
 }
 /*body{
 	width:100%;
@@ -22,21 +22,21 @@
 }
 .content h1{
 	font-size:78px;
-	font-family:Bahnschrift;
+	font-family:"Montserrat";
 }
 .content p{
 	font-size:35px;
 	margin:20px auto;
 	font-weight:100;
 	line-height:25px;
-	font-family:Bahnschrift;
+	font-family:"Montserrat";
 }
 
 .logo{
 	padding:15px;
 }
 .title{
-	font-family:Bahnschrift SemiBold ;
+	font-family:"Montserrat";
 	font-weight:bold;
 	color:#fff;
 	font-size:45px;
@@ -65,6 +65,7 @@ body a{
 	padding:10px;	
 }
 body a:link{
+	/*
 	background-color: transparent;
 	border:1px solid gray;
 	border-radius:5px;
@@ -72,10 +73,10 @@ body a:link{
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	transition:0.5s ease;
+	transition:0.5s ease;*/
 }
 body a:hover{
-	color:#29BAC4;
+	/*color:#29BAC4;*/
 }
 .members li{
 	padding-top:10px;
