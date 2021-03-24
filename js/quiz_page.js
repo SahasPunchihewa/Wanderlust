@@ -129,7 +129,7 @@
 		document.getElementById("quiz-time-left").innerHTML = 'Time Left: ' + c_minutes + ' minutes ' + c_seconds + ' seconds ';
 
 		  if (total_seconds <= 0) {
-			score();
+			displayRadioValue();
 		  } else {
 			total_seconds = total_seconds - 1;
 			c_minutes = parseInt(total_seconds / 60);
