@@ -24,43 +24,6 @@
 				<li><a href="student_details.html">Student Details</a></li>
             </ul>
         </nav>
-	  <h2 class="quizHead">QUIZ</h2>
-	  <div class="image">
-	  <img src="img/img_bg/img3.png" alt="img"/>
-	  </div>
-		<form id="quiz_tour" name="quiz_tour">
-	  	<table width="900px">
-		<tr>
-		<td>
-		
-			<div>
-			<p class="question">Q1</p>
-			<p>The ancient fortress known as Sigiriya Rock was built by King Kashyapa I to shield himself from potential attacks from his brother Moggallana, the rightful heir to the throne. 
-			This masterpiece has made many wonder about the technology at the time. Guess the number of steps to get to the top of the fortress?</p> 
-			<ul>
-			<input class="answer" type="radio" name="q1" value="w">
-	        <label> 884 steps</label>
-	    	<br>
-	        <input class="answer" type="radio" name="q1" value="w">
-	        <label>1,021 steps</label>
-	        <br>
-	        <input class="answer" type="radio" name="q1" value="w">
-	        <label> 981 steps</label>
-	        <br>
-	        <input class="answer" type="radio" name="q1" value="r">
-	        <label id="correctString1">1,236 steps</label>
-    		</ul>
-	  	</div>
-	  </td>
-	  </tr>
-	  <tr>
-	  <td>
-	  	<div>
-	  		<p class="question">Q2</p>
-			<p>Yuri Gagarin, Hero of the Soviet Union, the first man in space received many invitations 
-			from countries around the world to visit them. Which Heritage Hotel did he stay in, when he visited Sri Lanka on December 7 1961?</p>
->>>>>>> Stashed changes
-
 		<section class="q-title">
             <div class="main-description-q" id="main-title">
                 <div class="m-title">Welcome To The Quiz</div>
@@ -71,11 +34,14 @@
 			<div class="container">
 				<div class="image">
 				<img src="img/img_bg/img3.png" alt="img"/>
-				</div>
-				  <form id="quiz_tour" name="quiz_tour">
-					<table width="900px">
-				  <tr>
-				  <td>
+			</div>
+	  <h2 class="quizHead">QUIZ</h2>
+	  
+		<form id="quiz_tour" name="quiz_tour">
+	  	<table width="900px">
+		<tr>
+		<td>
+
 				  
 					  <div>
 					  <p class="question">Q1</p>
@@ -311,28 +277,29 @@
 				</td>
 			  </tr>
 			  </table>
-		  </form>
-		  <br>
+			<br>
+
+
+
+	
+	<div class="submitter">
+	<button id="submit-btn" type="button" onclick= "displayRadioValue()">
+		Submit 
+	</button> 
+	</div>
+		
+	</form>	  
+		
+		
+	
+	<div class="container">
+      <div id="quiz-time-left">
+     </div>
+	  <div id="col">
+	  </div>
+   </div>
 		  
-			<div class="submitter">
-			  <button class="a-p-edit" type="button" onclick= "displayRadioValue()">
-				  Submit 
-			  </button> 
-			  </div>
 			
-			  <div id="submit_button">
-				  <p id="number_correct"></p>
-			  
-			  </div>
-			  <div id="time">
-				  <text><strong>Time:<text id="timer">60</text></text></strong><br>
-				  <p id="msg1"></p>
-				  <p id="msg2"></p>
-				  <p id="msg3"></p>
-				  <p id="msg4"></p>
-			  </div>
-			</div>
-		</section>
 
 		<div class="footer">
             <div class="f-container">
@@ -389,70 +356,9 @@
             </div>
         </div>
 
-	    	<ul>
-	        <input class="answer" type="radio" name="q9" value="w">
-	        <label>Vesak</label>
-	        <br>
-	        <input class="answer" type="radio" name="q9" value="w">
-	        <label>Sinhala and Tamil New Year</label>
-	        <br>
-	        <input class="answer" type="radio" name="q9" value="r">
-	        <label id="correctString9">Kandy Esala Perahara</label>
-	        <br>
-	        <input class="answer" type="radio" name="q9" value="w">
-	        <label> Thaipongal</label>
-    		</ul>
-	  	</div>
-	  </td>
-	</tr>
-	<tr>
-	  <td>
-	  	<div>
-	  		<p class="question">Q10</p>
-			<p>On March 2, 1815 the Kingdom of Kandy was ceded to the British where the last king of Sri Lanka was deposed and taken as a royal prisoner by the British to Vellore Fort in Southern India. 
-			Who was the last King to reign over Sri Lanka?</p> 
-
-	    	<ul>
-	        <input class="answer" type="radio" name="q10" value="w">
-	        <label>King Dutugemunu</label>
-	        <br>
-	        <input class="answer" type="radio" name="q10" value="w">
-	        <label>King Kashyapa</label>
-	        <br>
-	        <input class="answer" type="radio" name="q10" value="r">
-	        <label id="correctString10">King Sri Wickrama Rajasinha</label>
-	        <br>
-	        <input class="answer" type="radio" name="q10" value="w">
-	        <label>King Parakramabahu the Great
-
-</label>
-    		</ul>
-	  	</div>
-	  </td>
-	</tr>
-	</table>
-
-<br>
+	    	
 
 
-
-	
-	<div class="submitter">
-	<button id="submit-btn" type="button" onclick= "displayRadioValue()">
-		Submit 
-	</button> 
-	</div>
-		
-</form>	  
-		
-		
-	
-	<div class="container">
-      <div id="quiz-time-left">
-     </div>
-	  <div id="col">
-	  </div>
-   </div>
 
 	
     <script>
