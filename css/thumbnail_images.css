@@ -70,8 +70,11 @@
     text-align: center
 }
 #coloursChanger {
+    padding-top: 20vh;
     display: block;
-    padding: 1%
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 #coloursChanger select {
     display: block;
