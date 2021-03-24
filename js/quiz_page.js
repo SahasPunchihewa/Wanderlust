@@ -138,3 +138,5 @@
 		  }
 		}
 		timer = setTimeout(CheckTime, 1000);
+		
+		
