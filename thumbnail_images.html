@@ -4,83 +4,105 @@
         <meta charset="utf-8">
         <title>Thumbnail Images</title>
         <link rel="stylesheet" href="css/thumbnail_images.css"/>
+        <link rel="stylesheet" href="css/styles.css"/>
     </head>
     <body id="bodyId">
-        <div id="coloursChanger">
-            <label id="selectModeLabel">Select Page Background Colour Here:</label>
-            <select id="selectMode" onclick="changeMode()">
-                <option value="white">White</option>
-                <option value="dodgerblue">Dodger Blue</option>
-                <option value="greenyellow">Green Yellow</option>
-                <option value="deeppink">Deep Pink</option>
-                <option value="darkviolet">Dark Violet</option>
-            </select>
-            <br/>
-            <label id="selectTextModeLabel">Select Page Text Colour Here:</label>
-            <select id="selectTextMode" onclick="changeTextMode()">
-                <option value="midnightblue">Midnight Blue</option>
-                <option value="silver">Silver</option>
-                <option value="gold">Gold</option>
-                <option value="crimson">Crimson</option>
-                <option value="forestgreen">Forest Green</option>
-            </select>
-        </div>
-        <section class="thumb-img">
-            <div class="container">
-                <div class="thumb-description">
-                    <p id="heading">Thumbnail Images</p>
+        <nav class="nav-header-ti" id="header">
+            <a href="index.html">
+                <div class="h-logo">
+                    <img id="h-icon" src="img/logo.png">
                 </div>
-                <div class="thumb-img-container">
-                    <div class="thumb-card-container">
-                        <div class="thumb-imgs">
-                            <img src="img/thumbnails/galle.jpg" alt="Galle is a beautiful city." class="image" id="galle" onmouseover="imgLarger(this);"/>
-                            <div class="thumb-card-title">
-                                <h3 id="cardTitle1">Galle</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="thumb-card-container">
-                        <div class="thumb-imgs">
-                            <img src="img/thumbnails/kandy.jpg" alt="Kandy is a sacred city." class="image" id="kandy" onmouseover="imgLarger(this);"/>
-                            <div class="thumb-card-title">
-                                <h3 id="cardTitle2">Kandy</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="thumb-card-container">
-                        <div class="thumb-imgs">
-                            <img src="img/thumbnails/jaffna.jpg" alt="Jaffna is a big city." class="image" id="jaffna" onmouseover="imgLarger(this);"/>
-                            <div class="thumb-card-title">
-                                <h3 id="cardTitle3">Jaffna</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="thumb-card-container">
-                        <div class="thumb-imgs">
-                            <img src="img/thumbnails/nuwara-eliya.jpg" alt="Nuwara Eliya is a cold city." class="image" id="nuwaraEliya" onmouseover="imgLarger(this);"/>
-                            <div class="thumb-card-title">
-                                <h3 id="cardTitle4">Nuwara Eliya</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="thumb-card-container">
-                        <div class="thumb-imgs">
-                            <img src="img/thumbnails/anuradhapura.jpg" alt="Anuradhapura is an ancient city." class="image" id="anuradhapura" onmouseover="imgLarger(this);" onmouseout="imgNone(this);"/>
-                            <div class="thumb-card-title">
-                                <h3 id="cardTitle5">Anuradhapura</h3>
-                            </div>
-                        </div>
-                    </div>
+                <div class="h-title" id="nav-title">
+                    Wanderlust
                 </div>
+            </a>
+            <ul class="h-ul" id="nav-anc">
+                <li><a href="#" class="active">Thumbnails</a></li>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="product_Page.html">Products</a></li>
+                <li><a href="student_details.html">Studentss</a></li>
+                
+            </ul>
+        </nav>
+        <section class="content">
+            <div id="coloursChanger">
+                <label id="selectModeLabel">Select Page Background Colour Here:</label>
+                <select id="selectMode" onclick="changeMode()">
+                    <option value="white">White</option>
+                    <option value="dodgerblue">Dodger Blue</option>
+                    <option value="greenyellow">Green Yellow</option>
+                    <option value="deeppink">Deep Pink</option>
+                    <option value="darkviolet">Dark Violet</option>
+                </select>
+                <br/>
+                <label id="selectTextModeLabel">Select Page Text Colour Here:</label>
+                <select id="selectTextMode" onclick="changeTextMode()">
+                    <option value="midnightblue">Midnight Blue</option>
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                    <option value="crimson">Crimson</option>
+                    <option value="forestgreen">Forest Green</option>
+                </select>
             </div>
-            <br/><br/><br/><br/>
-            <div class="imageViewer" align="center">
-                <img id="imgShow" alt="Expanded Image Loads Here" src="#"/>
-                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <section class="thumb-img">
+                <div class="container">
+                    <div class="thumb-description">
+                        <p id="heading">Thumbnail Images</p>
+                    </div>
+                    <div class="thumb-img-container">
+                        <div class="thumb-card-container">
+                            <div class="thumb-imgs">
+                                <img src="img/thumbnails/galle.jpg" alt="Galle is a beautiful city." class="image" id="galle" onmouseover="imgLarger(this);"/>
+                                <div class="thumb-card-title">
+                                    <h3 id="cardTitle1">Galle</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thumb-card-container">
+                            <div class="thumb-imgs">
+                                <img src="img/thumbnails/kandy.jpg" alt="Kandy is a sacred city." class="image" id="kandy" onmouseover="imgLarger(this);"/>
+                                <div class="thumb-card-title">
+                                    <h3 id="cardTitle2">Kandy</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thumb-card-container">
+                            <div class="thumb-imgs">
+                                <img src="img/thumbnails/jaffna.jpg" alt="Jaffna is a big city." class="image" id="jaffna" onmouseover="imgLarger(this);"/>
+                                <div class="thumb-card-title">
+                                    <h3 id="cardTitle3">Jaffna</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thumb-card-container">
+                            <div class="thumb-imgs">
+                                <img src="img/thumbnails/nuwara-eliya.jpg" alt="Nuwara Eliya is a cold city." class="image" id="nuwaraEliya" onmouseover="imgLarger(this);"/>
+                                <div class="thumb-card-title">
+                                    <h3 id="cardTitle4">Nuwara Eliya</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thumb-card-container">
+                            <div class="thumb-imgs">
+                                <img src="img/thumbnails/anuradhapura.jpg" alt="Anuradhapura is an ancient city." class="image" id="anuradhapura" onmouseover="imgLarger(this);" onmouseout="imgNone(this);"/>
+                                <div class="thumb-card-title">
+                                    <h3 id="cardTitle5">Anuradhapura</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <br/><br/><br/><br/>
-                <span id="imgDescription"></span>
-            </div>
+                <div class="imageViewer" align="center">
+                    <img id="imgShow" alt="Expanded Image Loads Here" src="#"/>
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <br/><br/><br/><br/>
+                    <span id="imgDescription"></span>
+                </div>
+            </section>
         </section>
+        
         
         <script>
             function changeMode() {
@@ -268,5 +290,6 @@
                 }
             }*/
         </script>
+        <script src="js/thumb.js"></script>
     </body>
 </html>
