@@ -24,7 +24,6 @@
 				<li><a href="student_details.html">Student Details</a></li>
             </ul>
         </nav>
-
 		<section class="q-title">
             <div class="main-description-q" id="main-title">
                 <div class="m-title">Welcome To The Quiz</div>
@@ -35,11 +34,14 @@
 			<div class="container">
 				<div class="image">
 				<img src="img/img_bg/img3.png" alt="img"/>
-				</div>
-				  <form id="quiz_tour" name="quiz_tour">
-					<table width="900px">
-				  <tr>
-				  <td>
+			</div>
+	  <h2 class="quizHead">QUIZ</h2>
+	  
+		<form id="quiz_tour" name="quiz_tour">
+	  	<table width="900px">
+		<tr>
+		<td>
+
 				  
 					  <div>
 					  <p class="question">Q1</p>
@@ -275,28 +277,29 @@
 				</td>
 			  </tr>
 			  </table>
-		  </form>
-		  <br>
+			<br>
+
+
+
+	
+	<div class="submitter">
+	<button id="submit-btn" type="button" onclick= "displayRadioValue()">
+		Submit 
+	</button> 
+	</div>
+		
+	</form>	  
+		
+		
+	
+	<div class="container">
+      <div id="quiz-time-left">
+     </div>
+	  <div id="col">
+	  </div>
+   </div>
 		  
-			<div class="submitter">
-			  <button class="a-p-edit" type="button" onclick= "displayRadioValue()">
-				  Submit 
-			  </button> 
-			  </div>
 			
-			  <div id="submit_button">
-				  <p id="number_correct"></p>
-			  
-			  </div>
-			  <div id="time">
-				  <text><strong>Time:<text id="timer">60</text></text></strong><br>
-				  <p id="msg1"></p>
-				  <p id="msg2"></p>
-				  <p id="msg3"></p>
-				  <p id="msg4"></p>
-			  </div>
-			</div>
-		</section>
 
 		<div class="footer">
             <div class="f-container">
@@ -353,114 +356,177 @@
             </div>
         </div>
 
-	 
-	
+	    	
+
+
 
 	
     <script>
-		var c=60;
-		function displayRadioValue(){
-		
-		
-		
-		var question1=document.forms["quiz_tour"]["q1"].value;
-		var question2=document.forms["quiz_tour"]["q2"].value;
-		var question3=document.forms["quiz_tour"]["q3"].value;
-		var question4=document.forms["quiz_tour"]["q4"].value;
-		var question5=document.forms["quiz_tour"]["q5"].value;
-		var question6=document.forms["quiz_tour"]["q6"].value;
-		var question7=document.forms["quiz_tour"]["q7"].value;
-		var question8=document.forms["quiz_tour"]["q8"].value;
-		var question9=document.forms["quiz_tour"]["q9"].value;
-		var question10=document.forms["quiz_tour"]["q10"].value;
-		var correct=0;
+	
 		
 
 		
-			if (question1=="r"){
+		//question_area
+		var question1=document.forms["quiz_tour"]["q1"];
+		var question2=document.forms["quiz_tour"]["q2"];
+		var question3=document.forms["quiz_tour"]["q3"];
+		var question4=document.forms["quiz_tour"]["q4"];
+		var question5=document.forms["quiz_tour"]["q5"];
+		var question6=document.forms["quiz_tour"]["q6"];
+		var question7=document.forms["quiz_tour"]["q7"];
+		var question8=document.forms["quiz_tour"]["q8"];
+		var question9=document.forms["quiz_tour"]["q9"];
+		var question10=document.forms["quiz_tour"]["q10"];
+		//variable to keep track of the points
+		var correct=0;
+		var total = 10;
+		//Array for the questions
+		var questions = [question1, question2, question3, question4, question5, question6, question7, question8, question9, question10];
+		
+		
+		
+		//checking answer 
+		function displayRadioValue(){
+		
+		
+			if (question1.value=="r"){
 				correct+=2;
 			}
 			else{
 				correct--;
 			}
-			if (question2=="r"){
+			if (question2.value=="r"){
 				correct+=2;
 			}
 			else{
 				correct--;
 			}
-			if (question3=="r"){
+			if (question3.value=="r"){
 				correct+=2;
 			}
 			else{
 				correct--;
 			}
-			if (question4=="r"){
+			if (question4.value=="r"){
 				correct+=2;
 			}
 			else{
 				correct--;
 			}
-			if (question5=="r"){
+			if (question5.value=="r"){
 				correct+=2;
 			}
 			else{
 				correct--;
 			}
-			if (question6=="r"){
+			if (question6.value=="r"){
 				correct+=2;	
 			}
 			else{
 				correct--;
 			}
-			if (question7=="r"){
+			if (question7.value=="r"){
 				correct+=2;
 			}
 			else{
 				correct--;
 			}
-			if (question8=="r"){
+			if (question8.value=="r"){
 				correct+=2;
 			}
 			else{
 				correct--;
 			}
-			if (question9=="r"){
+			if (question9.value=="r"){
 				correct+=2;
 			}
 			else{
 				correct--;
 			}
-			if (question10=="r"){
+			if (question10.value=="r"){
 				correct+=2;
 			}
 			else{
 				correct--;
 			}
-		    
-		    
-			document.getElementById("submit_button").style.visibility="visible";
-			document.getElementById("number_correct").innerHTML= "Your mark is " + correct ;
 		
-		window.clearInterval(update);
-        c = "-";
+			
+			
+			
+			// stop timer
+			clearInterval(timer);
+			
+			// disable form
+			var elements = document.getElementById("quiz_tour").elements;
+			for (var i = 0, len = elements.length; i < len; ++i) {
+			elements[i].disabled = true;
+			
+			}
+			
+		//CSS for questions
+		var q = document.getElementById("col");
+		if (correct>=15){
+		  document.querySelector("body").style.background= "#cbf1f5"
+		}else if (correct>=10) {
+		  document.querySelector("body").style.background= "#f5c0c0"
+		}else if (correct>=5){
+		  document.querySelector("body").style.background= "#94ebcd"
+		}else{
+		  document.querySelector("body").style.background= "#c5d7bd"
+		}
+
+
+        q.innerHTML = "You got " + correct + " Marks" +
+        "<br />" + "You used " + (59 - Math.floor(total_seconds)) + " seconds";
+
+        return false;
+
+		
+			
 		}
 		
+	
 		
-		function timer01(){
-			c=c-1;
-			if(c<60){
-				timer.innerHTML=c;
-				}
-			if(c<1){
-			window.clearInterval(update);
-				msg1.innerHTML = "Time's up";
-                msg2.innerHTML = "";
-                msg3.innerHTML = "";	
-               
-			}
+		//Timer
+		var total_seconds = 60 * 1;
+        var c_minutes = parseInt(total_seconds / 60);
+        var c_seconds = parseInt(total_seconds % 60);
+        var timer;
+		
+		function CheckTime() {
+		document.getElementById("quiz-time-left").innerHTML = 'Time Left: ' + c_minutes + ' minutes ' + c_seconds + ' seconds ';
+
+		  if (total_seconds <= 0) {
+			score();
+		  } else {
+			total_seconds = total_seconds - 1;
+			c_minutes = parseInt(total_seconds / 60);
+			c_seconds = parseInt(total_seconds % 60);
+			timer = setTimeout(CheckTime, 1000);
+		  }
 		}
-		update=setInterval("timer01()",1000);
+		timer = setTimeout(CheckTime, 1000);
+
+
+		
+	
+        
+
+	
+	
+	
+		
+	
+	
+    
+		
+		
+		
+		
+
+			 
+		
+
 		
 	
 		
