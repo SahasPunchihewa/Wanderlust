@@ -130,22 +130,20 @@ section.sec1
 .main-description
 {
     padding-top: 43vh;
-    padding-left: 20vw;
-    padding-right: 100px;
+    text-align: center;
     color: white;
     transition: 1s;
 }
 .main-sticky
 {
     padding-top: 50vh;
-    padding-left: 20vw;
-    padding-right: 100px;
+    text-align: center;
     color: white;
     transition: 1s;
 }
 .m-title
 {
-    font-size: 80px;
+    font-size: 70px;
     font-weight:500;
     text-transform: uppercase;
 }
