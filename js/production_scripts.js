@@ -6,6 +6,7 @@ var productPrice5;
 var productPrice6;
 var productPrice7;
 var productPrice8;
+var productPrice9;
 var quantityArray =[];
 var productArray =[];
 var priceArray =[];
@@ -33,7 +34,7 @@ function validateForm(){
 		document.getElementById("mobi").value = "";
 		false;	
 	}
-	if(email.indexOf("@")== -1 || email.length < 6){
+	if(email.indexOf("@")== -1 || email.indexOf(".") == -1){
 		window.alert("Please enter a Valid Email address");
 		document.getElementById("email").value = "";
 		return false;
@@ -53,7 +54,7 @@ function validateForm(){
 	document.getElementById("lname").value = "";
 	document.getElementById("email").value = "";
 	document.getElementById("mobi").value = "";
-}
+}	
 
 function addProduct1(){
 	productPrice1 = document.getElementById('product1').value*3500;
@@ -145,7 +146,18 @@ function addProduct8(){
 		priceArray.push(productPrice8);	
 	}	
 }
-
+function addProduct9(){
+	productPrice9 = document.getElementById('product9').value*5800;
+	if(document.getElementById('product9').value == "0" || document.getElementById('product9').value == ""){
+		window.alert("Please Select Quentity First");
+	}else{
+		window.alert(document.getElementById('product9').value+" Travelling Shoes are added to your cart. \nRs"+ productPrice9);
+		quantityArray.push(document.getElementById('product9').value);
+		productArray.push("Travelling Shoes");
+		priceArray.push(productPrice9);
+	}
+		
+}
 
 window.onscroll=function(){myFunction()};
 
