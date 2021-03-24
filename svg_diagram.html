@@ -4,62 +4,85 @@
         <meta charset="utf-8">
         <title>Wanderlust SVG Diagram</title>
         <link rel="stylesheet" type="text/css" href="css/svg_diagram.css"/>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
     <body>
-        <div class="container">
-            <h1>Wanderlust SVG Diagram</h1>
-            <br/><br/>
-            <svg id="svgDiagram" height="400" width="900">
-                <g id="groupId1">
-                    <rect x="360" y="0" height="50" width="180" rx="10"/>
-                    <text x="450" y="30" text-anchor="middle">Presentation Page</text>
-                </g>
-                <g id="groupId2">
-                    <line x1="450" y1="50" x2="450" y2="100"></line>
-                    <polyline points="445, 90 450, 100 455, 90"/>
-                </g>
-                <g id="groupId3">
-                    <rect x="360" y="100" height="50" width="180" rx="10"/>
-                    <text x="450" y="130" text-anchor="middle">Home Page</text>
-                </g>
-                <g id="groupId4">
-                    <line x1="450" y1="150" x2="450" y2="200"></line>
-                    <line x1="90" y1="200" x2="810" y2="200"></line>
-                </g>
-                <g id="groupId5">
-                    <line x1="90" y1="200" x2="90" y2="250"></line>
-                    <polyline points="85, 240 90, 250 95, 240"/>
-                </g>
-                <g id="groupId6">
-                    <line x1="330" y1="200" x2="330" y2="250"></line>
-                    <polyline points="325, 240 330, 250 335, 240"/>
-                </g>
-                <g id="groupId7">
-                    <line x1="570" y1="200" x2="570" y2="250"></line>
-                    <polyline points="565, 240 570, 250 575, 240"/>
-                </g>
-                <g id="groupId8">
-                    <line x1="810" y1="200" x2="810" y2="250"></line>
-                    <polyline points="805, 240 810, 250 815, 240"/>
-                </g>
-                <g id="groupId9">
-                    <rect x="0" y="250" height="50" width="180" rx="10"/>
-                    <text x="90" y="280" text-anchor="middle">Product Page</text>
-                </g>
-                <g id="groupId10">
-                    <rect x="240" y="250" height="50" width="180" rx="10"/>
-                    <text x="330" y="280" text-anchor="middle">Quiz</text>
-                </g>
-                <g id="groupId11">
-                    <rect x="480" y="250" height="50" width="180" rx="10"/>
-                    <text x="570" y="280" text-anchor="middle">Thumbnail Images</text>
-                </g>
-                <g id="groupId12">
-                    <rect x="720" y="250" height="50" width="180" rx="10"/>
-                    <text x="810" y="280" text-anchor="middle">Student Details</text>
-                </g>
-            </svg>
-        </div>
+        <nav class="nav-header-p" id="header">
+            <a href="index.html">
+                <div class="h-logo">
+                    <img id="h-icon" src="img/logo.png">
+                </div>
+                <div class="h-title" id="nav-title">
+                    Wanderlust
+                </div>
+            </a>
+            <ul class="h-ul" id="nav-anc">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#query-form">Query</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="product_Page.html">Products</a></li>
+                <li><a href="thumbnail_images.html">Thumbnails</a></li>
+                <li><a href="student_details.html">Students</a></li>
+            </ul>
+        </nav>
+        <section class="svg-cont">
+            <div class="container">
+                <h1>Wanderlust SVG Diagram</h1>
+                <br/><br/>
+                <svg id="svgDiagram" height="400" width="900">
+                    <g id="groupId1">
+                        <rect x="360" y="0" height="50" width="180" rx="10"/>
+                        <text x="450" y="30" text-anchor="middle">Presentation Page</text>
+                    </g>
+                    <g id="groupId2">
+                        <line x1="450" y1="50" x2="450" y2="100"></line>
+                        <polyline points="445, 90 450, 100 455, 90"/>
+                    </g>
+                    <g id="groupId3">
+                        <rect x="360" y="100" height="50" width="180" rx="10"/>
+                        <text x="450" y="130" text-anchor="middle">Home Page</text>
+                    </g>
+                    <g id="groupId4">
+                        <line x1="450" y1="150" x2="450" y2="200"></line>
+                        <line x1="90" y1="200" x2="810" y2="200"></line>
+                    </g>
+                    <g id="groupId5">
+                        <line x1="90" y1="200" x2="90" y2="250"></line>
+                        <polyline points="85, 240 90, 250 95, 240"/>
+                    </g>
+                    <g id="groupId6">
+                        <line x1="330" y1="200" x2="330" y2="250"></line>
+                        <polyline points="325, 240 330, 250 335, 240"/>
+                    </g>
+                    <g id="groupId7">
+                        <line x1="570" y1="200" x2="570" y2="250"></line>
+                        <polyline points="565, 240 570, 250 575, 240"/>
+                    </g>
+                    <g id="groupId8">
+                        <line x1="810" y1="200" x2="810" y2="250"></line>
+                        <polyline points="805, 240 810, 250 815, 240"/>
+                    </g>
+                    <g id="groupId9">
+                        <rect x="0" y="250" height="50" width="180" rx="10"/>
+                        <text x="90" y="280" text-anchor="middle">Product Page</text>
+                    </g>
+                    <g id="groupId10">
+                        <rect x="240" y="250" height="50" width="180" rx="10"/>
+                        <text x="330" y="280" text-anchor="middle">Quiz</text>
+                    </g>
+                    <g id="groupId11">
+                        <rect x="480" y="250" height="50" width="180" rx="10"/>
+                        <text x="570" y="280" text-anchor="middle">Thumbnail Images</text>
+                    </g>
+                    <g id="groupId12">
+                        <rect x="720" y="250" height="50" width="180" rx="10"/>
+                        <text x="810" y="280" text-anchor="middle">Student Details</text>
+                    </g>
+                </svg>
+            </div>
+        </section>
+        
     <script src="js/svg_diagram.js"></script>
+    <script src="js/svg_head.js"></script>
     </body>
 </html>
