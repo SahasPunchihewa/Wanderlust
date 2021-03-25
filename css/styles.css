@@ -1,9 +1,11 @@
+/*Embed site font*/
 @font-face
 {
     font-family:"Montserrat";
     src: url("../fonts/Montserrat-Regular.ttf");
 }
 
+/*styles for body*/
 body
 {
     margin: 0;
@@ -14,7 +16,7 @@ body
     flex-direction: column;
 }
 
-/*Nav*/
+/*Navigation header*/
 
 .nav-header
 {
@@ -30,6 +32,8 @@ body
     transition: 1s;
     z-index: 1;
 }
+
+/*styles for stykey header*/
 .sticky
 {
     background-color: white;
@@ -118,7 +122,7 @@ nav ul li a:hover
     color: deepskyblue;
 }
 
-/*Section 1*/
+/*Styles for Section 1*/
 
 section.sec1
 {
@@ -187,7 +191,7 @@ section.sec1
     transition: 1s;
 }
 
-/*Section 2*/
+/*Styles for Section 2*/
 
 .s2-container
 {
@@ -259,7 +263,7 @@ section.sec1
     height: 80px; 
 }
 
-/*Section 3*/
+/*Styles For Section 3*/
 .s3-img-container
 {
     padding-top: 20px;
@@ -441,7 +445,7 @@ input
 {
     padding: 50px;
 }
-/*Footer*/
+/*Styles For Footer Footer*/
 
 .footer
 {
@@ -561,6 +565,7 @@ input
     font-weight: 300;
 }
 
+/*card container stypes for page editor*/
 .card-container-pe
 {
     width: 100%;
@@ -571,6 +576,7 @@ input
     margin: auto;
 }
 
+/*Stles for stykey header for page editor*/
 .nav-header-p
 {
     position: fixed;
