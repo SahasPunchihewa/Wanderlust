@@ -1,4 +1,4 @@
-//this file is to animate stickey header for main page
+//this file is to animate stickey header for page editor
 
 //caaling function when scrolling
 window.onscroll=function(){myFunction()};

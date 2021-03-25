@@ -1,3 +1,4 @@
+/*styles for main section*/
 section.sec-main
 {
     width: 100%;
@@ -13,6 +14,7 @@ section.sec-main
     color: #414141;
     transition: 1s;
 }
+/*stckey header*/
 .main-sticky-p
 {
     padding-top: 7.5vh;
@@ -37,8 +39,3 @@ section.sec-main
     flex-direction: row;
     margin: auto;
 }
-
-
-
-
-
